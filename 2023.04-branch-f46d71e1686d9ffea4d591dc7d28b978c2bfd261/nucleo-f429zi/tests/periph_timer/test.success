@@ -1,0 +1,29 @@
+r
+/srv/jenkins-slave/workspace/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM4" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM4
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+
+Test for peripheral TIMERs
+
+Available timers: 1
+
+Testing TIMER_0:
+TIMER_0: initialization successful
+TIMER_0: stopped
+TIMER_0: set channel 0 to 5000
+TIMER_0: set channel 1 to 10000
+TIMER_0: set channel 2 to 15000
+TIMER_0: set channel 3 to 20000
+TIMER_0: starting
+TIMER_0: channel 0 fired at SW count    60001 - init:    60001
+TIMER_0: channel 1 fired at SW count   119987 - diff:    59986
+TIMER_0: channel 2 fired at SW count   179976 - diff:    59989
+TIMER_0: channel 3 fired at SW count   239965 - diff:    59989
+
+TEST SUCCEEDED
+

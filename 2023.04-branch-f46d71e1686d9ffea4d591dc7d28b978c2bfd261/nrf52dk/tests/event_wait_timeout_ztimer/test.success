@@ -1,0 +1,17 @@
+r
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:nrf52dk-10.saclay.iot-lab.info:20000' 
+Help: Press s to start test, r to print it is ready
+Help: Press s to start test, r to print it is ready
+READYs
+
+START
+main(): This is RIOT! (Version: buildtest)
+[START] event_wait_timeout test application.
+
+waiting for event with 10ms timeout @ ZTIMER_USEC...
+event_wait time out after 10020us
+waiting for event with 10ms timeout @ ZTIMER_MSEC...
+event_wait time out after 10060us
+finished: 4/4 events and 4/4 timeouts recorded
+[SUCCESS]
+

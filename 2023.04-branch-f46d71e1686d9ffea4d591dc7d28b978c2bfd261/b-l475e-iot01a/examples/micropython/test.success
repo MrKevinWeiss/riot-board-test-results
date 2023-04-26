@@ -1,0 +1,85 @@
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:st-iotnode-10.saclay.iot-lab.info:20000' 
+24; riot-b-l475e-iot01a with stm32
+Type "help()" for more information.
+>>> ��in(): This is RIOT! (Version: buildtest)
+-- Executing boot.py
+boot.py: MicroPython says hello!
+-- boot.py exited. Starting REPL..
+MicroPython bb8e51f on 2023-04-24; riot-b-l475e-iot01a with stm32
+Type "help()" for more information.
+>>> main(): This is RIOT! (Version: buildtest)
+-- Executing boot.py
+boot.py: MicroPython says hello!
+-- boot.py exited. Starting REPL..
+MicroPython bb8e51f on 2023-04-24; riot-b-l475e-iot01a with stm32
+Type "help()" for more information.
+>>> print("echo this! " * 4)
+print("echo this! " * 4)
+echo this! echo this! echo this! echo this! 
+>>> import riot
+print(riot.thread_getpid())
+import riot
+>>> print(riot.thread_getpid())
+1
+>>> import utime
+import utime
+>>> utime.time()
+utime.time()
+774
+>>> utime.sleep_ms(0)
+utime.sleep_ms(0)
+>>> utime.time()
+utime.time()
+1056
+>>> test_sleep(0, 1000): slept 282ms
+utime.time()
+utime.time()
+1197
+>>> utime.sleep_ms(50)
+utime.sleep_ms(50)
+>>> utime.time()
+utime.time()
+1530
+>>> test_sleep(50, 310): slept 333ms
+utime.time()
+utime.time()
+1671
+>>> utime.sleep_ms(250)
+utime.sleep_ms(250)
+>>> utime.time()
+utime.time()
+2204
+>>> test_sleep(250, 310): slept 533ms
+utime.time()
+utime.time()
+2345
+>>> utime.sleep_ms(500)
+utime.sleep_ms(500)
+>>>utime.time()
+ utime.time()
+3128
+>>>test_sleep(500, 310): slept 783ms
+import xtimer
+ import xtimer
+>>> a = 0
+a = 0
+>>> def inc_a(): global a; a+=1
+def inc_a(): global a; a+=1
+... 
+
+>>> t = xtimer.xtimer(inc_a)
+t = xtimer.xtimer(inc_a)
+>>> utime.time()
+utime.time()
+3974
+>>> t.set(500000)
+t.set(500000)
+>>>while a==0: pass
+ while a==0: pass
+... 
+
+>>>utime.time()
+ utime.time()
+4754
+>>> [TEST PASSED]
+

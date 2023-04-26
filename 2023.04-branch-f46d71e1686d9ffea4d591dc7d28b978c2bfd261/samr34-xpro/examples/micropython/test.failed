@@ -1,0 +1,68 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ./examples/micropython test
+ssh -t rici@grenoble.iot-lab.info 'socat - tcp:samr34-1.grenoble.iot-lab.info:20000' 
+�main(): This is RIOT! (Version: buildtest)
+-- Executing boot.py
+boot.py: MicroPython says hello!
+-- boot.py exited. Starting REPL..
+MicroPython bb8e51f on 2023-04-24; riot-samr34-xpro with saml21
+Type "help()" for more information.
+>>> print("echo this! " * 4)
+print("echo this! " * 4)
+echo this! echo this! echo this! echo this! 
+>>> import riot
+print(riot.thread_getpid())
+import riot
+>>> print(riot.thread_getpid())
+1
+>>> import utime
+import utime
+>>> utime.time()
+utime.time()
+765
+>>> utime.sleep_ms(0)
+utime.sleep_ms(0)
+>>> utime.time()
+utime.time()
+1062
+>>> test_sleep(0, 1000): slept 297ms
+utime.time()
+utime.time()
+1210
+>>> utime.sleep_ms(50)
+utime.sleep_ms(50)
+>>> utime.time()
+utime.time()
+1557
+>>> test_sleep(50, 326): slept 347ms
+utime.time()
+utime.time()
+1705
+>>> utime.sleep_ms(250)
+utime.sleep_ms(250)
+>>> utime.time()
+utime.time()
+2252
+>>> test_sleep(250, 326): slept 547ms
+utime.time()
+utime.time()
+2401
+>>> utime.sleep_ms(500)
+utime.sleep_ms(500)
+>>> utime.time()
+utime.time()
+3262
+>>> test_sleep(500, 326): slept 861ms
+
+Traceback (most recent call last):
+  File "/home/runner/work/RIOT/RIOT/examples/micropython/tests/01-run.py", line 84, in <module>
+    sys.exit(run(testfunc))
+  File "/home/runner/work/RIOT/RIOT/dist/pythonlibs/testrunner/__init__.py", line 30, in run
+    testfunc(child)
+  File "/home/runner/work/RIOT/RIOT/examples/micropython/tests/01-run.py", line 51, in testfunc
+    test_sleep(500, slack)
+  File "/home/runner/work/RIOT/RIOT/examples/micropython/tests/01-run.py", line 43, in test_sleep
+    assert duration > t and duration < (t + slack)
+AssertionError
+make: *** [/home/runner/work/RIOT/RIOT/makefiles/tests/tests.inc.mk:26: test] Error 1
+
+Return value: 2

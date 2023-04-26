@@ -1,0 +1,31 @@
+r
+/srv/jenkins-slave/workspace/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyUSB1" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyUSB1
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+THREADS CREATED
+
+Context switch every 625 µs
+{ "threads": [{ "name": "idle", "stack_size": 2048, "stack_used": 2048 }]}
+THREAD t1 start
+THREAD t2 start
+THREAD t3 start
+t1: 141.443787
+t3: 141.466812
+t1: 141.443787
+t3: 141.466812
+t1: 141.443787
+t3: 141.466812
+t1: 141.443787
+t3: 141.466812
+t1: 141.443787
+t3: 141.466812
+t1: 141.443787
+t3: 141.466812
+t3: 141.466812
+t1: 141.443787
+

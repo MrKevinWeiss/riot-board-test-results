@@ -1,0 +1,21 @@
+r
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:nrf52dk-10.saclay.iot-lab.info:20000' 
+Help: Press s to start test, r to print it is ready
+READYs
+
+START
+main(): This is RIOT! (Version: buildtest)
+Testing Bloom filter.
+
+m: 4096 k: 8
+
+adding 512 elements took 138ms
+checking 10000 elements took 1087ms
+
+245 elements probably in the filter.
+9755 elements not in the filter.
+0.024500 false positive rate.
+
+All done!
+{ "threads": [{ "name": "main", "stack_size": 1536, "stack_used": 416}]}
+

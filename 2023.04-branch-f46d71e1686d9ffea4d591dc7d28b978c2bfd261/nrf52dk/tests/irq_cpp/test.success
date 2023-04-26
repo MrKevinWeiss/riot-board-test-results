@@ -1,0 +1,15 @@
+r
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:nrf52dk-10.saclay.iot-lab.info:20000' 
+Help: Press s to start test, r to print it is ready
+READYs
+
+START
+main(): This is RIOT! (Version: buildtest)
+Testing irq wrapper
+----
+Starting Test suite irq
+Suite irq completed: SUCCESS
+----
+{ "threads": [{ "name": "main", "stack_size": 1536, "stack_used": 380 }]}
+All tests successful
+

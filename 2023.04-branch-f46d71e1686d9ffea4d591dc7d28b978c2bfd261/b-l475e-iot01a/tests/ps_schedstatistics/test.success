@@ -1,0 +1,35 @@
+r
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:st-iotnode-10.saclay.iot-lab.info:20000' 
+is is RIOT! (Version: buildtest)
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+Creating thread #0, next=1
+Creating thread #1, next=2
+Creating thread #2, next=3
+Creating thread #3, next=4
+Creating thread #4, next=0
+
+> 
+> 
+help
+> help
+Command              Description
+---------------------------------------
+pm                   interact with layered PM subsystem
+ps                   Prints information about running threads.
+reboot               Reboot the node
+version              Prints current RIOT_VERSION
+> ps
+ps
+	pid | name                 | state    Q | pri | stack  ( used) ( free) | base addr  | current     | runtime  | switches  | runtime_usec 
+	  - | isr_stack            | -        - |   - |    512 (  224) (  288) | 0x20000000 | 0x200001c8
+	  1 | main                 | running  Q |   7 |   1536 (  940) (  596) | 0x20001908 | 0x20001b5c  |  1.080% |        54  |      52444 
+	  2 | thread               | bl rx    _ |   6 |   1024 (  412) (  612) | 0x2000042c | 0x2000075c  |  0.230% |       135  |      11208 
+	  3 | thread               | bl rx    _ |   6 |   1024 (  412) (  612) | 0x2000082c | 0x20000b5c  |  0.314% |       139  |      15265 
+	  4 | thread               | bl rx    _ |   6 |   1024 (  412) (  612) | 0x20000c2c | 0x20000f5c  |  0.402% |       143  |      19549 
+	  5 | thread               | bl rx    _ |   6 |   1024 (  412) (  612) | 0x2000102c | 0x2000135c  |  0.495% |       147  |      24056 
+	  6 | thread               | bl rx    _ |   6 |   1024 (  412) (  612) | 0x2000142c | 0x2000175c  |  0.167% |       151  |       8154 
+	    | SUM                  |            |     |   7168 ( 3224) ( 3944)
+>

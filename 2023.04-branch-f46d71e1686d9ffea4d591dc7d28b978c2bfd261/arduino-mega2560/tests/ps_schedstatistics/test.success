@@ -1,0 +1,39 @@
+r
+/srv/jenkins-slave/workspace/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM1" -b "9600" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM1
+Welcome to pyterm!
+Type '/exit' to exit.
+
+main(): This is RIOT! (Version: buildtest)
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+Creating thread #0, next=1
+Creating thread #1, next=2
+Creating thread #2, next=3
+Creating thread #3, next=4
+Creating thread #4, next=0
+
+> help
+
+> 
+> help
+Command              Description
+---------------------------------------
+pm                   interact with layered PM subsystem
+ps                   Prints information about running threads.
+reboot               Reboot the node
+ps
+version              Prints current RIOT_VERSION
+> ps
+	pid | name                 | state    Q | pri | stack  ( used) ( free) | base addr  | current     | runtime  | switches  | runtime_usec 
+	  1 | idle                 | pending  Q |  15 |    512 (  140) (  372) |      0xe29 |      0xfd0  | 61.654% |         7  |    2840392 
+	  2 | main                 | running  Q |   7 |    640 (  466) (  174) |     0x1029 |     0x1107  |  7.491% |       296  |     345132 
+	  3 | thread               | bl rx    _ |   6 |    512 (  172) (  340) |      0x3ae |      0x54a  |  7.037% |       145  |     324200 
+	  4 | thread               | bl rx    _ |   6 |    512 (  172) (  340) |      0x5ae |      0x74a  | 11.746% |       171  |     541148 
+	  5 | thread               | bl rx    _ |   6 |    512 (  172) (  340) |      0x7ae |      0x94a  | 17.724% |       199  |     816572 
+	  6 | thread               | bl rx    _ |   6 |    512 (  180) (  332) |      0x9ae |      0xb4a  | 24.654% |       225  |    1135796 
+	  7 | thread               | bl mutex _ |   6 |    512 (  172) (  340) |      0xbae |      0xd33  |  6.595% |       252  |     303840 
+	    | SUM                  |            |     |   3712 ( 1474) ( 2238)
+> 

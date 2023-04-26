@@ -1,0 +1,11 @@
+r
+ssh -t rici@grenoble.iot-lab.info 'socat - tcp:samr34-1.grenoble.iot-lab.info:20000' 
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+Verifying that base64 encoding works for benchmark input: OK
+Verifying that base64 decoding works for benchmark input: OK
+Encoding 1.000 x 96 bytes (128 bytes in base64): 96153 µs
+Decoding 1.000 x 96 bytes (128 bytes in base64): 180402 µs
+{ "t

@@ -1,0 +1,8 @@
+make: command: Command not found
+make[1]: command: Command not found
+PASSED target time: 128[ms], actual_time: 129.175[ms]
+PASSED target time: 512[ms], actual_time: 518.696[ms]
+PASSED target time: 1024[ms], actual_time: 1037.387[ms]
+PASSED target time: 8192[ms], actual_time: 8295.014[ms]
+TEST PASSED
+

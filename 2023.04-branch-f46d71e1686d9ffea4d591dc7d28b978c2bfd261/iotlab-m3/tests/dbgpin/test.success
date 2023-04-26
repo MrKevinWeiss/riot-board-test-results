@@ -1,0 +1,10 @@
+r
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:m3-11.saclay.iot-lab.info:20000' 
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+Found 1 configured debug pin(s)
+Testing pin 0
+Test successful.
+{ "threads

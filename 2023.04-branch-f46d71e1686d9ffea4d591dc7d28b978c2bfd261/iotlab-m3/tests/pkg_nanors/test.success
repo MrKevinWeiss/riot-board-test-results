@@ -1,0 +1,22 @@
+r
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:m3-11.saclay.iot-lab.info:20000' 
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+START
+total: 30 shards (1920 bytes)
+clear shard 7 (64 byte)
+clear shard 22 (64 byte)
+clear shard 16 (64 byte)
+clear shard 20 (64 byte)
+clear shard 10 (64 byte)
+clear shard 2 (64 byte)
+clear shard 24 (64 byte)
+clear shard 17 (64 byte)
+clear shard 6 (64 byte)
+clear shard 16 (64 byte)
+reconstruct…
+done.
+SUCCESS
+{ "threads": 

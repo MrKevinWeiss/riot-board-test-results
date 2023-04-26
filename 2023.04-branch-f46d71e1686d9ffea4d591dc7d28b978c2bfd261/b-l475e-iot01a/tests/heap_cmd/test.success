@@ -1,0 +1,24 @@
+
+
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:st-iotnode-10.saclay.iot-lab.info:20000' 
+n(): This is RIOT! (Version: buildtest)
+Shell-based test application for heap functions.
+Use the 'help' command to get more information on how to use it.
+> heap
+
+> 
+> heap
+heap: 95760 (used 2500, free 93260) [bytes]
+> malloc 100
+malloc 100
+allocated 0x200013b8
+> heap
+heap
+heap: 95760 (used 2608, free 93152) [bytes]free 0x200013b8
+
+> free 0x200013b8
+freeing 0x200013b8
+>heap
+ heap
+heap: 95760 (used 2500, free 93260) [bytes]
+

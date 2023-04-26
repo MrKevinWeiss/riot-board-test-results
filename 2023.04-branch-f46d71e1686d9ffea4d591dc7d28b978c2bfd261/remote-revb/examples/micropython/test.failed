@@ -1,0 +1,9 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ./examples/micropython test
+miniterm --eol LF "/dev/ttyUSB0" "115200"  
+--- Miniterm on /dev/ttyUSB0  115200,8,N,1 ---
+--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---
+␀Timeout in expect script at "child.expect_exact('boot.py: MicroPython says hello!')" (examples/micropython/tests/01-run.py:15)
+
+make: *** [/srv/jenkins-slave/workspace/RIOT/makefiles/tests/tests.inc.mk:26: test] Error 1
+
+Return value: 2

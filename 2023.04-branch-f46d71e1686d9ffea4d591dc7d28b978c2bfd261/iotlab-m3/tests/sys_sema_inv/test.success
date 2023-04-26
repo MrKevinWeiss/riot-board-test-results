@@ -1,0 +1,20 @@
+r
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:m3-11.saclay.iot-lab.info:20000' 
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+counter mode
+THREAD 1 start
+THREAD 2 start
+THREAD 3 start
+thread synced
+THREAD 3 woke main thread
+mask mode
+THREAD 1 start
+THREAD 2 start
+THREAD 3 start
+thread synced
+THREAD 3 woke main thread
+SUCCESS
+{ "threads": [{ "name": "main", "stack_size": 1536, "stack_used"

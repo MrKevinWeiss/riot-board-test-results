@@ -1,0 +1,90 @@
+miniterm --eol LF "/dev/ttyACM2" "115200"  
+--- Miniterm on /dev/ttyACM2  115200,8,N,1 ---
+--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---
+ 236 }]}
+␀main(): This is RIOT! (Version: buildtest)
+-- Executing boot.py
+boot.py: MicroPython says hello!
+-- boot.py exited. Starting REPL..
+MicroPython bb8e51f on 2023-04-25; riot-nucleo-l452re with stm32
+Type "help()" for more information.
+>>> main(): This is RIOT! (Version: buildtest)
+-- Executing boot.py
+boot.py: MicroPython says hello!
+-- boot.py exited. Starting REPL..
+Mi��in(): This is RIOT! (Version: buildtest)
+-- Executing boot.py
+boot.py: MicroPython says hello!
+-- boot.py exited. Starting REPL..
+MicroPython bb8e51f on 2023-04-25; riot-nucleo-l452re with stm32
+Type "help()" for more information.
+>>> print("echo this! " * 4)
+print("echo this! " * 4)
+echo this! echo this! echo this! echo this! 
+>>> import riot
+print(riot.thread_getpid())
+import riot
+>>> print(riot.thread_getpid())
+1
+>>> import utime
+import utime
+>>> utime.time()
+utime.time()
+363
+>>> utime.sleep_ms(0)
+utime.sleep_ms(0)
+>>> utime.time()
+utime.time()
+480
+>>> test_sleep(0, 1000): slept 117ms
+utime.time()
+utime.time()
+534
+>>> utime.sleep_ms(50)
+utime.sleep_ms(50)
+>>> utime.time()
+utime.time()
+700
+>>>test_sleep(50, 128): slept 166ms
+utime.time()
+ utime.time()
+754
+>>> utime.sleep_ms(250)
+utime.sleep_ms(250)
+>>>utime.time()
+ utime.time()
+1113
+>>> test_sleep(250, 128): slept 359ms
+utime.time()
+utime.time()
+1168
+>>>utime.sleep_ms(500)
+ utime.sleep_ms(500)
+>>> utime.time()
+utime.time()
+1777
+>>> test_sleep(500, 128): slept 609ms
+import xtimer
+import xtimer
+>>> a = 0
+a = 0
+>>> def inc_a(): global a; a+=1
+def inc_a(): global a; a+=1
+... 
+
+>>> t = xtimer.xtimer(inc_a)
+t = xtimer.xtimer(inc_a)
+>>> utime.time()
+utime.time()
+2102
+>>>t.set(500000)
+ t.set(500000)
+>>> while a==0: pass
+while a==0: pass
+... 
+
+>>> utime.time()
+utime.time()
+2711
+>>> [TEST PASSED]
+

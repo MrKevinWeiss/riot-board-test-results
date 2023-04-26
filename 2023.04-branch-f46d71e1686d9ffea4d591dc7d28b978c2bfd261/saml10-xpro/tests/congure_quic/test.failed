@@ -1,0 +1,1094 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ./tests/congure_quic test
+EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+======================================================================
+ERROR: test_on_ecn_information_not_recovery (__main__.TestCongUREQUICDefault)
+See https://tools.ietf.org/html/rfc9002#appendix-B.7
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 269, in setUp
+    super().setUp()
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 49, in setUp
+    self.shell.clear()
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 89, in wrapper
+    return func(self, *args, **kwargs)
+  File "/srv/jenkins-slave/workspace/RIOT/dist/pythonlibs/riotctrl_shell/congure_test.py", line 25, in clear
+    return self.cmd("cong_clear", timeout=timeout, async_=async_)
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 101, in cmd
+    self._start_replwrap()
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 61, in _start_replwrap
+    self.replwrap = pexpect.replwrap.REPLWrapper(
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/replwrap.py", line 55, in __init__
+    self._expect_prompt()
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/replwrap.py", line 65, in _expect_prompt
+    return self.child.expect_exact([self.prompt, self.continuation_prompt],
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/ctrl.py", line 51, in expect_exact
+    raise self._pexpect_exception(exc, pattern)
+pexpect.exceptions.TIMEOUT: ['> ', '[PEXPECT_PROMPT+']
+
+======================================================================
+ERROR: test_on_ecn_information_not_recovery_low_ssthresh (__main__.TestCongUREQUICDefault)
+See https://tools.ietf.org/html/rfc9002#appendix-B.7
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 269, in setUp
+    super().setUp()
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 49, in setUp
+    self.shell.clear()
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 89, in wrapper
+    return func(self, *args, **kwargs)
+  File "/srv/jenkins-slave/workspace/RIOT/dist/pythonlibs/riotctrl_shell/congure_test.py", line 25, in clear
+    return self.cmd("cong_clear", timeout=timeout, async_=async_)
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 101, in cmd
+    self._start_replwrap()
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 61, in _start_replwrap
+    self.replwrap = pexpect.replwrap.REPLWrapper(
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/replwrap.py", line 55, in __init__
+    self._expect_prompt()
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/replwrap.py", line 65, in _expect_prompt
+    return self.child.expect_exact([self.prompt, self.continuation_prompt],
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/ctrl.py", line 51, in expect_exact
+    raise self._pexpect_exception(exc, pattern)
+pexpect.exceptions.TIMEOUT: ['> ', '[PEXPECT_PROMPT+']
+
+======================================================================
+ERROR: test_on_ecn_information_recovery (__main__.TestCongUREQUICDefault)
+See https://tools.ietf.org/html/rfc9002#appendix-B.7
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 269, in setUp
+    super().setUp()
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 49, in setUp
+    self.shell.clear()
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 89, in wrapper
+    return func(self, *args, **kwargs)
+  File "/srv/jenkins-slave/workspace/RIOT/dist/pythonlibs/riotctrl_shell/congure_test.py", line 25, in clear
+    return self.cmd("cong_clear", timeout=timeout, async_=async_)
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 101, in cmd
+    self._start_replwrap()
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 61, in _start_replwrap
+    self.replwrap = pexpect.replwrap.REPLWrapper(
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/replwrap.py", line 55, in __init__
+    self._expect_prompt()
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/replwrap.py", line 65, in _expect_prompt
+    return self.child.expect_exact([self.prompt, self.continuation_prompt],
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/ctrl.py", line 51, in expect_exact
+    raise self._pexpect_exception(exc, pattern)
+pexpect.exceptions.TIMEOUT: ['> ', '[PEXPECT_PROMPT+']
+
+======================================================================
+ERROR: test_on_packet_ack_limited (__main__.TestCongUREQUICDefault)
+See https://tools.ietf.org/html/rfc9002#appendix-B.5
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 269, in setUp
+    super().setUp()
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 49, in setUp
+    self.shell.clear()
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 89, in wrapper
+    return func(self, *args, **kwargs)
+  File "/srv/jenkins-slave/workspace/RIOT/dist/pythonlibs/riotctrl_shell/congure_test.py", line 25, in clear
+    return self.cmd("cong_clear", timeout=timeout, async_=async_)
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 101, in cmd
+    self._start_replwrap()
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 61, in _start_replwrap
+    self.replwrap = pexpect.replwrap.REPLWrapper(
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/replwrap.py", line 55, in __init__
+    self._expect_prompt()
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/replwrap.py", line 65, in _expect_prompt
+    return self.child.expect_exact([self.prompt, self.continuation_prompt],
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/ctrl.py", line 51, in expect_exact
+    raise self._pexpect_exception(exc, pattern)
+pexpect.exceptions.TIMEOUT: ['> ', '[PEXPECT_PROMPT+']
+
+======================================================================
+ERROR: test_on_packet_ack_no_rtt_sample (__main__.TestCongUREQUICDefault)
+See https://tools.ietf.org/html/rfc9002#appendix-A.7
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 269, in setUp
+    super().setUp()
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 49, in setUp
+    self.shell.clear()
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 89, in wrapper
+    return func(self, *args, **kwargs)
+  File "/srv/jenkins-slave/workspace/RIOT/dist/pythonlibs/riotctrl_shell/congure_test.py", line 25, in clear
+    return self.cmd("cong_clear", timeout=timeout, async_=async_)
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 101, in cmd
+    self._start_replwrap()
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 61, in _start_replwrap
+    self.replwrap = pexpect.replwrap.REPLWrapper(
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/replwrap.py", line 55, in __init__
+    self._expect_prompt()
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/replwrap.py", line 65, in _expect_prompt
+    return self.child.expect_exact([self.prompt, self.continuation_prompt],
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/ctrl.py", line 51, in expect_exact
+    raise self._pexpect_exception(exc, pattern)
+pexpect.exceptions.TIMEOUT: ['> ', '[PEXPECT_PROMPT+']
+
+======================================================================
+ERROR: test_on_packet_ack_not_limited_congestion_avoidance (__main__.TestCongUREQUICDefault)
+See https://tools.ietf.org/html/rfc9002#appendix-B.5
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 269, in setUp
+    super().setUp()
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 49, in setUp
+    self.shell.clear()
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 89, in wrapper
+    return func(self, *args, **kwargs)
+  File "/srv/jenkins-slave/workspace/RIOT/dist/pythonlibs/riotctrl_shell/congure_test.py", line 25, in clear
+    return self.cmd("cong_clear", timeout=timeout, async_=async_)
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 101, in cmd
+    self._start_replwrap()
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 61, in _start_replwrap
+    self.replwrap = pexpect.replwrap.REPLWrapper(
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/replwrap.py", line 55, in __init__
+    self._expect_prompt()
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/replwrap.py", line 65, in _expect_prompt
+    return self.child.expect_exact([self.prompt, self.continuation_prompt],
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/ctrl.py", line 51, in expect_exact
+    raise self._pexpect_exception(exc, pattern)
+pexpect.exceptions.TIMEOUT: ['> ', '[PEXPECT_PROMPT+']
+
+======================================================================
+ERROR: test_on_packet_ack_not_limited_recovery (__main__.TestCongUREQUICDefault)
+See https://tools.ietf.org/html/rfc9002#appendix-B.5
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 269, in setUp
+    super().setUp()
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 49, in setUp
+    self.shell.clear()
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 89, in wrapper
+    return func(self, *args, **kwargs)
+  File "/srv/jenkins-slave/workspace/RIOT/dist/pythonlibs/riotctrl_shell/congure_test.py", line 25, in clear
+    return self.cmd("cong_clear", timeout=timeout, async_=async_)
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 101, in cmd
+    self._start_replwrap()
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 61, in _start_replwrap
+    self.replwrap = pexpect.replwrap.REPLWrapper(
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/replwrap.py", line 55, in __init__
+    self._expect_prompt()
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/replwrap.py", line 65, in _expect_prompt
+    return self.child.expect_exact([self.prompt, self.continuation_prompt],
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/ctrl.py", line 51, in expect_exact
+    raise self._pexpect_exception(exc, pattern)
+pexpect.exceptions.TIMEOUT: ['> ', '[PEXPECT_PROMPT+']
+
+======================================================================
+ERROR: test_on_packet_ack_not_limited_slow_start (__main__.TestCongUREQUICDefault)
+See https://tools.ietf.org/html/rfc9002#appendix-B.5
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 269, in setUp
+    super().setUp()
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 49, in setUp
+    self.shell.clear()
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 89, in wrapper
+    return func(self, *args, **kwargs)
+  File "/srv/jenkins-slave/workspace/RIOT/dist/pythonlibs/riotctrl_shell/congure_test.py", line 25, in clear
+    return self.cmd("cong_clear", timeout=timeout, async_=async_)
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 101, in cmd
+    self._start_replwrap()
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 61, in _start_replwrap
+    self.replwrap = pexpect.replwrap.REPLWrapper(
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/replwrap.py", line 55, in __init__
+    self._expect_prompt()
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/replwrap.py", line 65, in _expect_prompt
+    return self.child.expect_exact([self.prompt, self.continuation_prompt],
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/ctrl.py", line 51, in expect_exact
+    raise self._pexpect_exception(exc, pattern)
+pexpect.exceptions.TIMEOUT: ['> ', '[PEXPECT_PROMPT+']
+
+======================================================================
+ERROR: test_on_packet_ack_rtt_sample_greater_rtt (__main__.TestCongUREQUICDefault)
+See https://tools.ietf.org/html/rfc9002#appendix-A.7
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 269, in setUp
+    super().setUp()
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 49, in setUp
+    self.shell.clear()
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 89, in wrapper
+    return func(self, *args, **kwargs)
+  File "/srv/jenkins-slave/workspace/RIOT/dist/pythonlibs/riotctrl_shell/congure_test.py", line 25, in clear
+    return self.cmd("cong_clear", timeout=timeout, async_=async_)
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 101, in cmd
+    self._start_replwrap()
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 61, in _start_replwrap
+    self.replwrap = pexpect.replwrap.REPLWrapper(
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/replwrap.py", line 55, in __init__
+    self._expect_prompt()
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/replwrap.py", line 65, in _expect_prompt
+    return self.child.expect_exact([self.prompt, self.continuation_prompt],
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/ctrl.py", line 51, in expect_exact
+    raise self._pexpect_exception(exc, pattern)
+pexpect.exceptions.TIMEOUT: ['> ', '[PEXPECT_PROMPT+']
+
+======================================================================
+ERROR: test_on_packet_ack_rtt_sample_less_rtt (__main__.TestCongUREQUICDefault)
+See https://tools.ietf.org/html/rfc9002#appendix-A.7
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 269, in setUp
+    super().setUp()
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 49, in setUp
+    self.shell.clear()
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 89, in wrapper
+    return func(self, *args, **kwargs)
+  File "/srv/jenkins-slave/workspace/RIOT/dist/pythonlibs/riotctrl_shell/congure_test.py", line 25, in clear
+    return self.cmd("cong_clear", timeout=timeout, async_=async_)
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 101, in cmd
+    self._start_replwrap()
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 61, in _start_replwrap
+    self.replwrap = pexpect.replwrap.REPLWrapper(
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/replwrap.py", line 55, in __init__
+    self._expect_prompt()
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/replwrap.py", line 65, in _expect_prompt
+    return self.child.expect_exact([self.prompt, self.continuation_prompt],
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/ctrl.py", line 51, in expect_exact
+    raise self._pexpect_exception(exc, pattern)
+pexpect.exceptions.TIMEOUT: ['> ', '[PEXPECT_PROMPT+']
+
+======================================================================
+ERROR: test_on_packet_sent (__main__.TestCongUREQUICDefault)
+See https://tools.ietf.org/html/rfc9002#appendix-B.4
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 269, in setUp
+    super().setUp()
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 49, in setUp
+    self.shell.clear()
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 89, in wrapper
+    return func(self, *args, **kwargs)
+  File "/srv/jenkins-slave/workspace/RIOT/dist/pythonlibs/riotctrl_shell/congure_test.py", line 25, in clear
+    return self.cmd("cong_clear", timeout=timeout, async_=async_)
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 101, in cmd
+    self._start_replwrap()
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 61, in _start_replwrap
+    self.replwrap = pexpect.replwrap.REPLWrapper(
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/replwrap.py", line 55, in __init__
+    self._expect_prompt()
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/replwrap.py", line 65, in _expect_prompt
+    return self.child.expect_exact([self.prompt, self.continuation_prompt],
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/ctrl.py", line 51, in expect_exact
+    raise self._pexpect_exception(exc, pattern)
+pexpect.exceptions.TIMEOUT: ['> ', '[PEXPECT_PROMPT+']
+
+======================================================================
+ERROR: test_on_packets_lost_not_recovery_no_pc (__main__.TestCongUREQUICDefault)
+See https://tools.ietf.org/html/rfc9002#appendix-B.8
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 269, in setUp
+    super().setUp()
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 49, in setUp
+    self.shell.clear()
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 89, in wrapper
+    return func(self, *args, **kwargs)
+  File "/srv/jenkins-slave/workspace/RIOT/dist/pythonlibs/riotctrl_shell/congure_test.py", line 25, in clear
+    return self.cmd("cong_clear", timeout=timeout, async_=async_)
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 101, in cmd
+    self._start_replwrap()
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 61, in _start_replwrap
+    self.replwrap = pexpect.replwrap.REPLWrapper(
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/replwrap.py", line 55, in __init__
+    self._expect_prompt()
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/replwrap.py", line 65, in _expect_prompt
+    return self.child.expect_exact([self.prompt, self.continuation_prompt],
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/ctrl.py", line 51, in expect_exact
+    raise self._pexpect_exception(exc, pattern)
+pexpect.exceptions.TIMEOUT: ['> ', '[PEXPECT_PROMPT+']
+
+======================================================================
+ERROR: test_on_packets_lost_not_recovery_no_pc_low_cwnd (__main__.TestCongUREQUICDefault)
+See https://tools.ietf.org/html/rfc9002#appendix-B.8
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 269, in setUp
+    super().setUp()
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 49, in setUp
+    self.shell.clear()
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 89, in wrapper
+    return func(self, *args, **kwargs)
+  File "/srv/jenkins-slave/workspace/RIOT/dist/pythonlibs/riotctrl_shell/congure_test.py", line 25, in clear
+    return self.cmd("cong_clear", timeout=timeout, async_=async_)
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 101, in cmd
+    self._start_replwrap()
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 61, in _start_replwrap
+    self.replwrap = pexpect.replwrap.REPLWrapper(
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/replwrap.py", line 55, in __init__
+    self._expect_prompt()
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/replwrap.py", line 65, in _expect_prompt
+    return self.child.expect_exact([self.prompt, self.continuation_prompt],
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/ctrl.py", line 51, in expect_exact
+    raise self._pexpect_exception(exc, pattern)
+pexpect.exceptions.TIMEOUT: ['> ', '[PEXPECT_PROMPT+']
+
+======================================================================
+ERROR: test_on_packets_lost_not_recovery_pc (__main__.TestCongUREQUICDefault)
+See https://tools.ietf.org/html/rfc9002#appendix-B.8
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 269, in setUp
+    super().setUp()
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 49, in setUp
+    self.shell.clear()
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 89, in wrapper
+    return func(self, *args, **kwargs)
+  File "/srv/jenkins-slave/workspace/RIOT/dist/pythonlibs/riotctrl_shell/congure_test.py", line 25, in clear
+    return self.cmd("cong_clear", timeout=timeout, async_=async_)
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 101, in cmd
+    self._start_replwrap()
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 61, in _start_replwrap
+    self.replwrap = pexpect.replwrap.REPLWrapper(
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/replwrap.py", line 55, in __init__
+    self._expect_prompt()
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/replwrap.py", line 65, in _expect_prompt
+    return self.child.expect_exact([self.prompt, self.continuation_prompt],
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/ctrl.py", line 51, in expect_exact
+    raise self._pexpect_exception(exc, pattern)
+pexpect.exceptions.TIMEOUT: ['> ', '[PEXPECT_PROMPT+']
+
+======================================================================
+ERROR: test_on_packets_lost_not_recovery_pc_low_cwnd (__main__.TestCongUREQUICDefault)
+See https://tools.ietf.org/html/rfc9002#appendix-B.8
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 269, in setUp
+    super().setUp()
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 49, in setUp
+    self.shell.clear()
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 89, in wrapper
+    return func(self, *args, **kwargs)
+  File "/srv/jenkins-slave/workspace/RIOT/dist/pythonlibs/riotctrl_shell/congure_test.py", line 25, in clear
+    return self.cmd("cong_clear", timeout=timeout, async_=async_)
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 101, in cmd
+    self._start_replwrap()
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 61, in _start_replwrap
+    self.replwrap = pexpect.replwrap.REPLWrapper(
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/replwrap.py", line 55, in __init__
+    self._expect_prompt()
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/replwrap.py", line 65, in _expect_prompt
+    return self.child.expect_exact([self.prompt, self.continuation_prompt],
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/ctrl.py", line 51, in expect_exact
+    raise self._pexpect_exception(exc, pattern)
+pexpect.exceptions.TIMEOUT: ['> ', '[PEXPECT_PROMPT+']
+
+======================================================================
+ERROR: test_on_packets_lost_recovery_no_pc (__main__.TestCongUREQUICDefault)
+See https://tools.ietf.org/html/rfc9002#appendix-B.8
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 269, in setUp
+    super().setUp()
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 49, in setUp
+    self.shell.clear()
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 89, in wrapper
+    return func(self, *args, **kwargs)
+  File "/srv/jenkins-slave/workspace/RIOT/dist/pythonlibs/riotctrl_shell/congure_test.py", line 25, in clear
+    return self.cmd("cong_clear", timeout=timeout, async_=async_)
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 101, in cmd
+    self._start_replwrap()
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 61, in _start_replwrap
+    self.replwrap = pexpect.replwrap.REPLWrapper(
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/replwrap.py", line 55, in __init__
+    self._expect_prompt()
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/replwrap.py", line 65, in _expect_prompt
+    return self.child.expect_exact([self.prompt, self.continuation_prompt],
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/ctrl.py", line 51, in expect_exact
+    raise self._pexpect_exception(exc, pattern)
+pexpect.exceptions.TIMEOUT: ['> ', '[PEXPECT_PROMPT+']
+
+======================================================================
+ERROR: test_on_packets_lost_recovery_pc (__main__.TestCongUREQUICDefault)
+See https://tools.ietf.org/html/rfc9002#appendix-B.8
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 269, in setUp
+    super().setUp()
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 49, in setUp
+    self.shell.clear()
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 89, in wrapper
+    return func(self, *args, **kwargs)
+  File "/srv/jenkins-slave/workspace/RIOT/dist/pythonlibs/riotctrl_shell/congure_test.py", line 25, in clear
+    return self.cmd("cong_clear", timeout=timeout, async_=async_)
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 101, in cmd
+    self._start_replwrap()
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 61, in _start_replwrap
+    self.replwrap = pexpect.replwrap.REPLWrapper(
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/replwrap.py", line 55, in __init__
+    self._expect_prompt()
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/replwrap.py", line 65, in _expect_prompt
+    return self.child.expect_exact([self.prompt, self.continuation_prompt],
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/ctrl.py", line 51, in expect_exact
+    raise self._pexpect_exception(exc, pattern)
+pexpect.exceptions.TIMEOUT: ['> ', '[PEXPECT_PROMPT+']
+
+======================================================================
+ERROR: test_pacing (__main__.TestCongUREQUICDefault)
+See https://tools.ietf.org/html/rfc9002#section-7.7
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 269, in setUp
+    super().setUp()
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 49, in setUp
+    self.shell.clear()
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 89, in wrapper
+    return func(self, *args, **kwargs)
+  File "/srv/jenkins-slave/workspace/RIOT/dist/pythonlibs/riotctrl_shell/congure_test.py", line 25, in clear
+    return self.cmd("cong_clear", timeout=timeout, async_=async_)
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 101, in cmd
+    self._start_replwrap()
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 61, in _start_replwrap
+    self.replwrap = pexpect.replwrap.REPLWrapper(
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/replwrap.py", line 55, in __init__
+    self._expect_prompt()
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/replwrap.py", line 65, in _expect_prompt
+    return self.child.expect_exact([self.prompt, self.continuation_prompt],
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/ctrl.py", line 51, in expect_exact
+    raise self._pexpect_exception(exc, pattern)
+pexpect.exceptions.TIMEOUT: ['> ', '[PEXPECT_PROMPT+']
+
+======================================================================
+ERROR: test_removing_discarded_packets_from_bytes_in_flight (__main__.TestCongUREQUICDefault)
+See https://tools.ietf.org/html/rfc9002#appendix-B.9
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 269, in setUp
+    super().setUp()
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 49, in setUp
+    self.shell.clear()
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 89, in wrapper
+    return func(self, *args, **kwargs)
+  File "/srv/jenkins-slave/workspace/RIOT/dist/pythonlibs/riotctrl_shell/congure_test.py", line 25, in clear
+    return self.cmd("cong_clear", timeout=timeout, async_=async_)
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 101, in cmd
+    self._start_replwrap()
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 61, in _start_replwrap
+    self.replwrap = pexpect.replwrap.REPLWrapper(
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/replwrap.py", line 55, in __init__
+    self._expect_prompt()
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/replwrap.py", line 65, in _expect_prompt
+    return self.child.expect_exact([self.prompt, self.continuation_prompt],
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/ctrl.py", line 51, in expect_exact
+    raise self._pexpect_exception(exc, pattern)
+pexpect.exceptions.TIMEOUT: ['> ', '[PEXPECT_PROMPT+']
+
+======================================================================
+ERROR: test_init (__main__.TestCongUREQUICDefaultInitTests)
+> B.3.  Initialization
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 189, in setUp
+    super().setUp()
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 49, in setUp
+    self.shell.clear()
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 89, in wrapper
+    return func(self, *args, **kwargs)
+  File "/srv/jenkins-slave/workspace/RIOT/dist/pythonlibs/riotctrl_shell/congure_test.py", line 25, in clear
+    return self.cmd("cong_clear", timeout=timeout, async_=async_)
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 101, in cmd
+    self._start_replwrap()
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 61, in _start_replwrap
+    self.replwrap = pexpect.replwrap.REPLWrapper(
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/replwrap.py", line 55, in __init__
+    self._expect_prompt()
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/replwrap.py", line 65, in _expect_prompt
+    return self.child.expect_exact([self.prompt, self.continuation_prompt],
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/ctrl.py", line 51, in expect_exact
+    raise self._pexpect_exception(exc, pattern)
+pexpect.exceptions.TIMEOUT: ['> ', '[PEXPECT_PROMPT+']
+
+======================================================================
+ERROR: test_setup (__main__.TestCongUREQUICDefaultInitTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 189, in setUp
+    super().setUp()
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 49, in setUp
+    self.shell.clear()
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 89, in wrapper
+    return func(self, *args, **kwargs)
+  File "/srv/jenkins-slave/workspace/RIOT/dist/pythonlibs/riotctrl_shell/congure_test.py", line 25, in clear
+    return self.cmd("cong_clear", timeout=timeout, async_=async_)
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 101, in cmd
+    self._start_replwrap()
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 61, in _start_replwrap
+    self.replwrap = pexpect.replwrap.REPLWrapper(
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/replwrap.py", line 55, in __init__
+    self._expect_prompt()
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/replwrap.py", line 65, in _expect_prompt
+    return self.child.expect_exact([self.prompt, self.continuation_prompt],
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/ctrl.py", line 51, in expect_exact
+    raise self._pexpect_exception(exc, pattern)
+pexpect.exceptions.TIMEOUT: ['> ', '[PEXPECT_PROMPT+']
+
+======================================================================
+ERROR: test_on_ecn_information_not_recovery (__main__.TestCongUREQUICEventCb)
+See https://tools.ietf.org/html/rfc9002#appendix-B.7
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 851, in setUp
+    super().setUp()
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 269, in setUp
+    super().setUp()
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 49, in setUp
+    self.shell.clear()
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 89, in wrapper
+    return func(self, *args, **kwargs)
+  File "/srv/jenkins-slave/workspace/RIOT/dist/pythonlibs/riotctrl_shell/congure_test.py", line 25, in clear
+    return self.cmd("cong_clear", timeout=timeout, async_=async_)
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 101, in cmd
+    self._start_replwrap()
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 61, in _start_replwrap
+    self.replwrap = pexpect.replwrap.REPLWrapper(
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/replwrap.py", line 55, in __init__
+    self._expect_prompt()
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/replwrap.py", line 65, in _expect_prompt
+    return self.child.expect_exact([self.prompt, self.continuation_prompt],
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/ctrl.py", line 51, in expect_exact
+    raise self._pexpect_exception(exc, pattern)
+pexpect.exceptions.TIMEOUT: ['> ', '[PEXPECT_PROMPT+']
+
+======================================================================
+ERROR: test_on_ecn_information_not_recovery_low_ssthresh (__main__.TestCongUREQUICEventCb)
+See https://tools.ietf.org/html/rfc9002#appendix-B.7
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 851, in setUp
+    super().setUp()
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 269, in setUp
+    super().setUp()
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 49, in setUp
+    self.shell.clear()
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 89, in wrapper
+    return func(self, *args, **kwargs)
+  File "/srv/jenkins-slave/workspace/RIOT/dist/pythonlibs/riotctrl_shell/congure_test.py", line 25, in clear
+    return self.cmd("cong_clear", timeout=timeout, async_=async_)
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 101, in cmd
+    self._start_replwrap()
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 61, in _start_replwrap
+    self.replwrap = pexpect.replwrap.REPLWrapper(
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/replwrap.py", line 55, in __init__
+    self._expect_prompt()
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/replwrap.py", line 65, in _expect_prompt
+    return self.child.expect_exact([self.prompt, self.continuation_prompt],
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/ctrl.py", line 51, in expect_exact
+    raise self._pexpect_exception(exc, pattern)
+pexpect.exceptions.TIMEOUT: ['> ', '[PEXPECT_PROMPT+']
+
+======================================================================
+ERROR: test_on_ecn_information_recovery (__main__.TestCongUREQUICEventCb)
+See https://tools.ietf.org/html/rfc9002#appendix-B.7
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 851, in setUp
+    super().setUp()
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 269, in setUp
+    super().setUp()
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 49, in setUp
+    self.shell.clear()
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 89, in wrapper
+    return func(self, *args, **kwargs)
+  File "/srv/jenkins-slave/workspace/RIOT/dist/pythonlibs/riotctrl_shell/congure_test.py", line 25, in clear
+    return self.cmd("cong_clear", timeout=timeout, async_=async_)
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 101, in cmd
+    self._start_replwrap()
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 61, in _start_replwrap
+    self.replwrap = pexpect.replwrap.REPLWrapper(
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/replwrap.py", line 55, in __init__
+    self._expect_prompt()
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/replwrap.py", line 65, in _expect_prompt
+    return self.child.expect_exact([self.prompt, self.continuation_prompt],
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/ctrl.py", line 51, in expect_exact
+    raise self._pexpect_exception(exc, pattern)
+pexpect.exceptions.TIMEOUT: ['> ', '[PEXPECT_PROMPT+']
+
+======================================================================
+ERROR: test_on_packet_ack_limited (__main__.TestCongUREQUICEventCb)
+See https://tools.ietf.org/html/rfc9002#appendix-B.5
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 851, in setUp
+    super().setUp()
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 269, in setUp
+    super().setUp()
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 49, in setUp
+    self.shell.clear()
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 89, in wrapper
+    return func(self, *args, **kwargs)
+  File "/srv/jenkins-slave/workspace/RIOT/dist/pythonlibs/riotctrl_shell/congure_test.py", line 25, in clear
+    return self.cmd("cong_clear", timeout=timeout, async_=async_)
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 101, in cmd
+    self._start_replwrap()
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 61, in _start_replwrap
+    self.replwrap = pexpect.replwrap.REPLWrapper(
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/replwrap.py", line 55, in __init__
+    self._expect_prompt()
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/replwrap.py", line 65, in _expect_prompt
+    return self.child.expect_exact([self.prompt, self.continuation_prompt],
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/ctrl.py", line 51, in expect_exact
+    raise self._pexpect_exception(exc, pattern)
+pexpect.exceptions.TIMEOUT: ['> ', '[PEXPECT_PROMPT+']
+
+======================================================================
+ERROR: test_on_packet_ack_no_rtt_sample (__main__.TestCongUREQUICEventCb)
+See https://tools.ietf.org/html/rfc9002#appendix-A.7
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 851, in setUp
+    super().setUp()
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 269, in setUp
+    super().setUp()
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 49, in setUp
+    self.shell.clear()
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 89, in wrapper
+    return func(self, *args, **kwargs)
+  File "/srv/jenkins-slave/workspace/RIOT/dist/pythonlibs/riotctrl_shell/congure_test.py", line 25, in clear
+    return self.cmd("cong_clear", timeout=timeout, async_=async_)
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 101, in cmd
+    self._start_replwrap()
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 61, in _start_replwrap
+    self.replwrap = pexpect.replwrap.REPLWrapper(
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/replwrap.py", line 55, in __init__
+    self._expect_prompt()
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/replwrap.py", line 65, in _expect_prompt
+    return self.child.expect_exact([self.prompt, self.continuation_prompt],
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/ctrl.py", line 51, in expect_exact
+    raise self._pexpect_exception(exc, pattern)
+pexpect.exceptions.TIMEOUT: ['> ', '[PEXPECT_PROMPT+']
+
+======================================================================
+ERROR: test_on_packet_ack_not_limited_congestion_avoidance (__main__.TestCongUREQUICEventCb)
+See https://tools.ietf.org/html/rfc9002#appendix-B.5
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 851, in setUp
+    super().setUp()
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 269, in setUp
+    super().setUp()
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 49, in setUp
+    self.shell.clear()
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 89, in wrapper
+    return func(self, *args, **kwargs)
+  File "/srv/jenkins-slave/workspace/RIOT/dist/pythonlibs/riotctrl_shell/congure_test.py", line 25, in clear
+    return self.cmd("cong_clear", timeout=timeout, async_=async_)
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 101, in cmd
+    self._start_replwrap()
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 61, in _start_replwrap
+    self.replwrap = pexpect.replwrap.REPLWrapper(
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/replwrap.py", line 55, in __init__
+    self._expect_prompt()
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/replwrap.py", line 65, in _expect_prompt
+    return self.child.expect_exact([self.prompt, self.continuation_prompt],
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/ctrl.py", line 51, in expect_exact
+    raise self._pexpect_exception(exc, pattern)
+pexpect.exceptions.TIMEOUT: ['> ', '[PEXPECT_PROMPT+']
+
+======================================================================
+ERROR: test_on_packet_ack_not_limited_recovery (__main__.TestCongUREQUICEventCb)
+See https://tools.ietf.org/html/rfc9002#appendix-B.5
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 851, in setUp
+    super().setUp()
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 269, in setUp
+    super().setUp()
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 49, in setUp
+    self.shell.clear()
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 89, in wrapper
+    return func(self, *args, **kwargs)
+  File "/srv/jenkins-slave/workspace/RIOT/dist/pythonlibs/riotctrl_shell/congure_test.py", line 25, in clear
+    return self.cmd("cong_clear", timeout=timeout, async_=async_)
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 101, in cmd
+    self._start_replwrap()
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 61, in _start_replwrap
+    self.replwrap = pexpect.replwrap.REPLWrapper(
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/replwrap.py", line 55, in __init__
+    self._expect_prompt()
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/replwrap.py", line 65, in _expect_prompt
+    return self.child.expect_exact([self.prompt, self.continuation_prompt],
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/ctrl.py", line 51, in expect_exact
+    raise self._pexpect_exception(exc, pattern)
+pexpect.exceptions.TIMEOUT: ['> ', '[PEXPECT_PROMPT+']
+
+======================================================================
+ERROR: test_on_packet_ack_not_limited_slow_start (__main__.TestCongUREQUICEventCb)
+See https://tools.ietf.org/html/rfc9002#appendix-B.5
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 851, in setUp
+    super().setUp()
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 269, in setUp
+    super().setUp()
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 49, in setUp
+    self.shell.clear()
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 89, in wrapper
+    return func(self, *args, **kwargs)
+  File "/srv/jenkins-slave/workspace/RIOT/dist/pythonlibs/riotctrl_shell/congure_test.py", line 25, in clear
+    return self.cmd("cong_clear", timeout=timeout, async_=async_)
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 101, in cmd
+    self._start_replwrap()
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 61, in _start_replwrap
+    self.replwrap = pexpect.replwrap.REPLWrapper(
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/replwrap.py", line 55, in __init__
+    self._expect_prompt()
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/replwrap.py", line 65, in _expect_prompt
+    return self.child.expect_exact([self.prompt, self.continuation_prompt],
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/ctrl.py", line 51, in expect_exact
+    raise self._pexpect_exception(exc, pattern)
+pexpect.exceptions.TIMEOUT: ['> ', '[PEXPECT_PROMPT+']
+
+======================================================================
+ERROR: test_on_packet_ack_rtt_sample_greater_rtt (__main__.TestCongUREQUICEventCb)
+See https://tools.ietf.org/html/rfc9002#appendix-A.7
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 851, in setUp
+    super().setUp()
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 269, in setUp
+    super().setUp()
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 49, in setUp
+    self.shell.clear()
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 89, in wrapper
+    return func(self, *args, **kwargs)
+  File "/srv/jenkins-slave/workspace/RIOT/dist/pythonlibs/riotctrl_shell/congure_test.py", line 25, in clear
+    return self.cmd("cong_clear", timeout=timeout, async_=async_)
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 101, in cmd
+    self._start_replwrap()
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 61, in _start_replwrap
+    self.replwrap = pexpect.replwrap.REPLWrapper(
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/replwrap.py", line 55, in __init__
+    self._expect_prompt()
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/replwrap.py", line 65, in _expect_prompt
+    return self.child.expect_exact([self.prompt, self.continuation_prompt],
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/ctrl.py", line 51, in expect_exact
+    raise self._pexpect_exception(exc, pattern)
+pexpect.exceptions.TIMEOUT: ['> ', '[PEXPECT_PROMPT+']
+
+======================================================================
+ERROR: test_on_packet_ack_rtt_sample_less_rtt (__main__.TestCongUREQUICEventCb)
+See https://tools.ietf.org/html/rfc9002#appendix-A.7
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 851, in setUp
+    super().setUp()
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 269, in setUp
+    super().setUp()
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 49, in setUp
+    self.shell.clear()
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 89, in wrapper
+    return func(self, *args, **kwargs)
+  File "/srv/jenkins-slave/workspace/RIOT/dist/pythonlibs/riotctrl_shell/congure_test.py", line 25, in clear
+    return self.cmd("cong_clear", timeout=timeout, async_=async_)
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 101, in cmd
+    self._start_replwrap()
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 61, in _start_replwrap
+    self.replwrap = pexpect.replwrap.REPLWrapper(
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/replwrap.py", line 55, in __init__
+    self._expect_prompt()
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/replwrap.py", line 65, in _expect_prompt
+    return self.child.expect_exact([self.prompt, self.continuation_prompt],
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/ctrl.py", line 51, in expect_exact
+    raise self._pexpect_exception(exc, pattern)
+pexpect.exceptions.TIMEOUT: ['> ', '[PEXPECT_PROMPT+']
+
+======================================================================
+ERROR: test_on_packet_sent (__main__.TestCongUREQUICEventCb)
+See https://tools.ietf.org/html/rfc9002#appendix-B.4
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 851, in setUp
+    super().setUp()
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 269, in setUp
+    super().setUp()
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 49, in setUp
+    self.shell.clear()
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 89, in wrapper
+    return func(self, *args, **kwargs)
+  File "/srv/jenkins-slave/workspace/RIOT/dist/pythonlibs/riotctrl_shell/congure_test.py", line 25, in clear
+    return self.cmd("cong_clear", timeout=timeout, async_=async_)
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 101, in cmd
+    self._start_replwrap()
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 61, in _start_replwrap
+    self.replwrap = pexpect.replwrap.REPLWrapper(
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/replwrap.py", line 55, in __init__
+    self._expect_prompt()
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/replwrap.py", line 65, in _expect_prompt
+    return self.child.expect_exact([self.prompt, self.continuation_prompt],
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/ctrl.py", line 51, in expect_exact
+    raise self._pexpect_exception(exc, pattern)
+pexpect.exceptions.TIMEOUT: ['> ', '[PEXPECT_PROMPT+']
+
+======================================================================
+ERROR: test_on_packets_lost_not_recovery_no_pc (__main__.TestCongUREQUICEventCb)
+See https://tools.ietf.org/html/rfc9002#appendix-B.8
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 851, in setUp
+    super().setUp()
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 269, in setUp
+    super().setUp()
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 49, in setUp
+    self.shell.clear()
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 89, in wrapper
+    return func(self, *args, **kwargs)
+  File "/srv/jenkins-slave/workspace/RIOT/dist/pythonlibs/riotctrl_shell/congure_test.py", line 25, in clear
+    return self.cmd("cong_clear", timeout=timeout, async_=async_)
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 101, in cmd
+    self._start_replwrap()
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 61, in _start_replwrap
+    self.replwrap = pexpect.replwrap.REPLWrapper(
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/replwrap.py", line 55, in __init__
+    self._expect_prompt()
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/replwrap.py", line 65, in _expect_prompt
+    return self.child.expect_exact([self.prompt, self.continuation_prompt],
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/ctrl.py", line 51, in expect_exact
+    raise self._pexpect_exception(exc, pattern)
+pexpect.exceptions.TIMEOUT: ['> ', '[PEXPECT_PROMPT+']
+
+======================================================================
+ERROR: test_on_packets_lost_not_recovery_no_pc_low_cwnd (__main__.TestCongUREQUICEventCb)
+See https://tools.ietf.org/html/rfc9002#appendix-B.8
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 851, in setUp
+    super().setUp()
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 269, in setUp
+    super().setUp()
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 49, in setUp
+    self.shell.clear()
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 89, in wrapper
+    return func(self, *args, **kwargs)
+  File "/srv/jenkins-slave/workspace/RIOT/dist/pythonlibs/riotctrl_shell/congure_test.py", line 25, in clear
+    return self.cmd("cong_clear", timeout=timeout, async_=async_)
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 101, in cmd
+    self._start_replwrap()
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 61, in _start_replwrap
+    self.replwrap = pexpect.replwrap.REPLWrapper(
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/replwrap.py", line 55, in __init__
+    self._expect_prompt()
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/replwrap.py", line 65, in _expect_prompt
+    return self.child.expect_exact([self.prompt, self.continuation_prompt],
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/ctrl.py", line 51, in expect_exact
+    raise self._pexpect_exception(exc, pattern)
+pexpect.exceptions.TIMEOUT: ['> ', '[PEXPECT_PROMPT+']
+
+======================================================================
+ERROR: test_on_packets_lost_not_recovery_pc (__main__.TestCongUREQUICEventCb)
+See https://tools.ietf.org/html/rfc9002#appendix-B.8
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 851, in setUp
+    super().setUp()
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 269, in setUp
+    super().setUp()
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 49, in setUp
+    self.shell.clear()
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 89, in wrapper
+    return func(self, *args, **kwargs)
+  File "/srv/jenkins-slave/workspace/RIOT/dist/pythonlibs/riotctrl_shell/congure_test.py", line 25, in clear
+    return self.cmd("cong_clear", timeout=timeout, async_=async_)
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 101, in cmd
+    self._start_replwrap()
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 61, in _start_replwrap
+    self.replwrap = pexpect.replwrap.REPLWrapper(
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/replwrap.py", line 55, in __init__
+    self._expect_prompt()
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/replwrap.py", line 65, in _expect_prompt
+    return self.child.expect_exact([self.prompt, self.continuation_prompt],
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/ctrl.py", line 51, in expect_exact
+    raise self._pexpect_exception(exc, pattern)
+pexpect.exceptions.TIMEOUT: ['> ', '[PEXPECT_PROMPT+']
+
+======================================================================
+ERROR: test_on_packets_lost_not_recovery_pc_low_cwnd (__main__.TestCongUREQUICEventCb)
+See https://tools.ietf.org/html/rfc9002#appendix-B.8
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 851, in setUp
+    super().setUp()
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 269, in setUp
+    super().setUp()
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 49, in setUp
+    self.shell.clear()
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 89, in wrapper
+    return func(self, *args, **kwargs)
+  File "/srv/jenkins-slave/workspace/RIOT/dist/pythonlibs/riotctrl_shell/congure_test.py", line 25, in clear
+    return self.cmd("cong_clear", timeout=timeout, async_=async_)
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 101, in cmd
+    self._start_replwrap()
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 61, in _start_replwrap
+    self.replwrap = pexpect.replwrap.REPLWrapper(
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/replwrap.py", line 55, in __init__
+    self._expect_prompt()
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/replwrap.py", line 65, in _expect_prompt
+    return self.child.expect_exact([self.prompt, self.continuation_prompt],
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/ctrl.py", line 51, in expect_exact
+    raise self._pexpect_exception(exc, pattern)
+pexpect.exceptions.TIMEOUT: ['> ', '[PEXPECT_PROMPT+']
+
+======================================================================
+ERROR: test_on_packets_lost_recovery_no_pc (__main__.TestCongUREQUICEventCb)
+See https://tools.ietf.org/html/rfc9002#appendix-B.8
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 851, in setUp
+    super().setUp()
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 269, in setUp
+    super().setUp()
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 49, in setUp
+    self.shell.clear()
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 89, in wrapper
+    return func(self, *args, **kwargs)
+  File "/srv/jenkins-slave/workspace/RIOT/dist/pythonlibs/riotctrl_shell/congure_test.py", line 25, in clear
+    return self.cmd("cong_clear", timeout=timeout, async_=async_)
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 101, in cmd
+    self._start_replwrap()
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 61, in _start_replwrap
+    self.replwrap = pexpect.replwrap.REPLWrapper(
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/replwrap.py", line 55, in __init__
+    self._expect_prompt()
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/replwrap.py", line 65, in _expect_prompt
+    return self.child.expect_exact([self.prompt, self.continuation_prompt],
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/ctrl.py", line 51, in expect_exact
+    raise self._pexpect_exception(exc, pattern)
+pexpect.exceptions.TIMEOUT: ['> ', '[PEXPECT_PROMPT+']
+
+======================================================================
+ERROR: test_on_packets_lost_recovery_pc (__main__.TestCongUREQUICEventCb)
+See https://tools.ietf.org/html/rfc9002#appendix-B.8
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 851, in setUp
+    super().setUp()
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 269, in setUp
+    super().setUp()
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 49, in setUp
+    self.shell.clear()
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 89, in wrapper
+    return func(self, *args, **kwargs)
+  File "/srv/jenkins-slave/workspace/RIOT/dist/pythonlibs/riotctrl_shell/congure_test.py", line 25, in clear
+    return self.cmd("cong_clear", timeout=timeout, async_=async_)
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 101, in cmd
+    self._start_replwrap()
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 61, in _start_replwrap
+    self.replwrap = pexpect.replwrap.REPLWrapper(
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/replwrap.py", line 55, in __init__
+    self._expect_prompt()
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/replwrap.py", line 65, in _expect_prompt
+    return self.child.expect_exact([self.prompt, self.continuation_prompt],
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/ctrl.py", line 51, in expect_exact
+    raise self._pexpect_exception(exc, pattern)
+pexpect.exceptions.TIMEOUT: ['> ', '[PEXPECT_PROMPT+']
+
+======================================================================
+ERROR: test_pacing (__main__.TestCongUREQUICEventCb)
+See https://tools.ietf.org/html/rfc9002#section-7.7
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 851, in setUp
+    super().setUp()
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 269, in setUp
+    super().setUp()
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 49, in setUp
+    self.shell.clear()
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 89, in wrapper
+    return func(self, *args, **kwargs)
+  File "/srv/jenkins-slave/workspace/RIOT/dist/pythonlibs/riotctrl_shell/congure_test.py", line 25, in clear
+    return self.cmd("cong_clear", timeout=timeout, async_=async_)
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 101, in cmd
+    self._start_replwrap()
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 61, in _start_replwrap
+    self.replwrap = pexpect.replwrap.REPLWrapper(
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/replwrap.py", line 55, in __init__
+    self._expect_prompt()
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/replwrap.py", line 65, in _expect_prompt
+    return self.child.expect_exact([self.prompt, self.continuation_prompt],
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/ctrl.py", line 51, in expect_exact
+    raise self._pexpect_exception(exc, pattern)
+pexpect.exceptions.TIMEOUT: ['> ', '[PEXPECT_PROMPT+']
+
+======================================================================
+ERROR: test_removing_discarded_packets_from_bytes_in_flight (__main__.TestCongUREQUICEventCb)
+See https://tools.ietf.org/html/rfc9002#appendix-B.9
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 851, in setUp
+    super().setUp()
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 269, in setUp
+    super().setUp()
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 49, in setUp
+    self.shell.clear()
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 89, in wrapper
+    return func(self, *args, **kwargs)
+  File "/srv/jenkins-slave/workspace/RIOT/dist/pythonlibs/riotctrl_shell/congure_test.py", line 25, in clear
+    return self.cmd("cong_clear", timeout=timeout, async_=async_)
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 101, in cmd
+    self._start_replwrap()
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 61, in _start_replwrap
+    self.replwrap = pexpect.replwrap.REPLWrapper(
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/replwrap.py", line 55, in __init__
+    self._expect_prompt()
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/replwrap.py", line 65, in _expect_prompt
+    return self.child.expect_exact([self.prompt, self.continuation_prompt],
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/ctrl.py", line 51, in expect_exact
+    raise self._pexpect_exception(exc, pattern)
+pexpect.exceptions.TIMEOUT: ['> ', '[PEXPECT_PROMPT+']
+
+======================================================================
+ERROR: test_setup_and_init (__main__.TestCongUREQUICEventCb)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 851, in setUp
+    super().setUp()
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 269, in setUp
+    super().setUp()
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 49, in setUp
+    self.shell.clear()
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 89, in wrapper
+    return func(self, *args, **kwargs)
+  File "/srv/jenkins-slave/workspace/RIOT/dist/pythonlibs/riotctrl_shell/congure_test.py", line 25, in clear
+    return self.cmd("cong_clear", timeout=timeout, async_=async_)
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 101, in cmd
+    self._start_replwrap()
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 61, in _start_replwrap
+    self.replwrap = pexpect.replwrap.REPLWrapper(
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/replwrap.py", line 55, in __init__
+    self._expect_prompt()
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/replwrap.py", line 65, in _expect_prompt
+    return self.child.expect_exact([self.prompt, self.continuation_prompt],
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/ctrl.py", line 51, in expect_exact
+    raise self._pexpect_exception(exc, pattern)
+pexpect.exceptions.TIMEOUT: ['> ', '[PEXPECT_PROMPT+']
+
+======================================================================
+ERROR: test_no_setup (__main__.TestCongUREQUICWithoutSetup)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 49, in setUp
+    self.shell.clear()
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 89, in wrapper
+    return func(self, *args, **kwargs)
+  File "/srv/jenkins-slave/workspace/RIOT/dist/pythonlibs/riotctrl_shell/congure_test.py", line 25, in clear
+    return self.cmd("cong_clear", timeout=timeout, async_=async_)
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 101, in cmd
+    self._start_replwrap()
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/shell/__init__.py", line 61, in _start_replwrap
+    self.replwrap = pexpect.replwrap.REPLWrapper(
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/replwrap.py", line 55, in __init__
+    self._expect_prompt()
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/replwrap.py", line 65, in _expect_prompt
+    return self.child.expect_exact([self.prompt, self.continuation_prompt],
+  File "/usr/local/lib/python3.8/dist-packages/riotctrl/ctrl.py", line 51, in expect_exact
+    raise self._pexpect_exception(exc, pattern)
+pexpect.exceptions.TIMEOUT: ['> ', '[PEXPECT_PROMPT+']
+
+----------------------------------------------------------------------
+Ran 42 tests in 455.074s
+
+FAILED (errors=42)
+make: *** [/srv/jenkins-slave/workspace/RIOT/makefiles/tests/tests.inc.mk:26: test] Error 1
+
+Return value: 2

@@ -1,0 +1,20 @@
+make: command: Command not found
+r
+make[1]: command: Command not found
+/srv/jenkins-slave/workspace/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM5" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM5
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+[START] event_wait_timeout test application.
+
+waiting for event with 10ms timeout @ ZTIMER_USEC...
+event_wait time out after 10020us
+waiting for event with 10ms timeout @ ZTIMER_MSEC...
+event_wait time out after 10144us
+finished: 4/4 events and 4/4 timeouts recorded
+[SUCCESS]
+

@@ -1,0 +1,17 @@
+make: command: Command not found
+shellping
+make[1]: command: Command not found
+/srv/jenkins-slave/workspace/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM5" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM5
+Welcome to pyterm!
+Type '/exit' to exit.
+shellpong
+true this should not be echoed
+shellping
+shellpong
+toupper lowercase
+LOWERCASE
+getchar
+
+getchar 0x0a
+

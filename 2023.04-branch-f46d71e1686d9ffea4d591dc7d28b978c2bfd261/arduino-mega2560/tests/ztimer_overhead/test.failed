@@ -1,0 +1,36 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ./tests/ztimer_overhead test
+r
+/srv/jenkins-slave/workspace/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM1" -b "9600" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM1
+Welcome to pyterm!
+Type '/exit' to exit.
+: Press s to start test, r to print it is ready
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+ZTIMER_USEC auto_adjust params:
+    ZTIMER_USEC->adjust_set = 132
+    ZTIMER_USEC->adjust_sleep = 120
+ZTIMER_USEC auto_adjust params cleared
+zitmer_overhead_set...
+min=132 max=136 avg_diff=135
+zitmer_overhead_sleep...
+min=124 max=124 avg_diff=124
+ZTIMER_USEC adjust params for arduino-mega2560:
+    CONFIG_ZTIMER_USEC_ADJUST_SET    132
+    CONFIG_ZTIMER_USEC_ADJUST_SLEEP  124
+
+Traceback (most recent call last):
+  File "/srv/jenkins-slave/workspace/RIOT/tests/ztimer_overhead/tests/01-run.py", line 33, in <module>
+    sys.exit(run(testfunc))
+  File "/srv/jenkins-slave/workspace/RIOT/dist/pythonlibs/testrunner/__init__.py", line 30, in run
+    testfunc(child)
+  File "/srv/jenkins-slave/workspace/RIOT/tests/ztimer_overhead/tests/01-run.py", line 29, in testfunc
+    assert auto_adjust_sleep >= adjust_sleep - ADJUST_SLEEP_MARGIN
+AssertionError
+make: *** [/srv/jenkins-slave/workspace/RIOT/makefiles/tests/tests.inc.mk:26: test] Error 1
+
+Return value: 2

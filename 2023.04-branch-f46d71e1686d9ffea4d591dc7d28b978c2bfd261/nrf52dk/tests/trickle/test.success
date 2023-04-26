@@ -1,0 +1,24 @@
+r
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:nrf52dk-10.saclay.iot-lab.info:20000' 
+Help: Press s to start test, r to print it is ready
+Help: Press s to start test, r to print it is ready
+READYs
+
+START
+main(): This is RIOT! (Version: buildtest)
+[START]
+now = 3214, t = 26
+now = 3272, t = 52
+now = 3372, t = 91
+now = 3540, t = 137
+now = 4018, t = 373
+[TRICKLE_RESET]
+now = 4033, t = 13
+now = 4067, t = 29
+now = 4120, t = 48
+now = 4235, t = 97
+now = 4462, t = 195
+now = 5014, t = 489
+now = 6017, t = 978
+[SUCCESS]
+{ 

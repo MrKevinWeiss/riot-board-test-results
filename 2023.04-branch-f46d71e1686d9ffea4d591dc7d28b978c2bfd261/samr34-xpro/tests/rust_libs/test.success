@@ -1,0 +1,24 @@
+
+
+ssh -t rici@grenoble.iot-lab.info 'socat - tcp:samr34-1.grenoble.iot-lab.info:20000' 
+
+> 
+> start_test
+start_test
+[TEST_START]
+> help
+help
+Command              Description
+---------------------------------------
+bufsize              Get the shell's buffer size
+start_test           starts a test
+end_test             ends a test
+echo                 prints the input command
+empty                print nothing on command
+hello_world          Print a greeting
+xfa_test1            xfa test command 1
+xfa_test2            xfa test command 2
+> end_test
+end_test
+[TEST_END]
+

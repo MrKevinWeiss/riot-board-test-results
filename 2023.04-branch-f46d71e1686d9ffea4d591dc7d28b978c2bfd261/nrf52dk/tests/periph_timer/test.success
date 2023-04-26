@@ -1,0 +1,66 @@
+r
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:nrf52dk-10.saclay.iot-lab.info:20000' 
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+
+Test for peripheral TIMERs
+
+Available timers: 4
+
+Testing TIMER_0:
+TIMER_0: initialization successful
+TIMER_0: stopped
+TIMER_0: set channel 0 to 5000
+TIMER_0: set channel 1 to 10000
+TIMER_0: set channel 2 to 15000
+TIMER_0: starting
+TIMER_0: channel 0 fired at SW count    19998 - init:    19998
+TIMER_0: channel 1 fired at SW count    39983 - diff:    19985
+TIMER_0: channel 2 fired at SW count    59970 - diff:    19987
+
+Testing TIMER_1:
+TIMER_1: initialization successful
+TIMER_1: stopped
+TIMER_1: set channel 0 to 5000
+TIMER_1: set channel 1 to 10000
+TIMER_1: set channel 2 to 15000
+TIMER_1: starting
+TIMER_1: channel 0 fired at SW count    19998 - init:    19998
+TIMER_1: channel 1 fired at SW count    39984 - diff:    19986
+TIMER_1: channel 2 fired at SW count    59970 - diff:    19986
+
+Testing TIMER_2:
+TIMER_2: initialization successful
+TIMER_2: stopped
+TIMER_2: set channel 0 to 5000
+TIMER_2: set channel 1 to 10000
+TIMER_2: set channel 2 to 15000
+TIMER_2: set channel 3 to 20000
+TIMER_2: set channel 4 to 25000
+TIMER_2: starting
+TIMER_2: channel 0 fired at SW count    19998 - init:    19998
+TIMER_2: channel 1 fired at SW count    39980 - diff:    19982
+TIMER_2: channel 2 fired at SW count    59964 - diff:    19984
+TIMER_2: channel 3 fired at SW count    79948 - diff:    19984
+TIMER_2: channel 4 fired at SW count    99931 - diff:    19983
+
+Testing TIMER_3:
+TIMER_3: initialization successful
+TIMER_3: stopped
+TIMER_3: set channel 0 to 5000
+TIMER_3: set channel 1 to 10000
+TIMER_3: set channel 2 to 15000
+TIMER_3: set channel 3 to 20000
+TIMER_3: set channel 4 to 25000
+TIMER_3: starting
+TIMER_3: channel 0 fired at SW count    19999 - init:    19999
+TIMER_3: channel 1 fired at SW count    39982 - diff:    19983
+TIMER_3: channel 2 fired at SW count    59966 - diff:    19984
+TIMER_3: channel 3 fired at SW count    79949 - diff:    19983
+TIMER_3: channel 4 fired at SW count    99933 - diff:    19984
+
+TEST SUCCEEDED
+{

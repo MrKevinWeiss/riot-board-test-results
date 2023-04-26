@@ -1,0 +1,23 @@
+r
+/srv/jenkins-slave/workspace/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyUSB1" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyUSB1
+Welcome to pyterm!
+Type '/exit' to exit.
+READYs
+
+START
+main(): This is RIOT! (Version: buildtest)
+
+************ C++ mutex test ***********
+Lock and unlock ... 
+{ "threads": [{ "name": "riot_cpp_thread", "stack_size": 3584, "stack_used": 3580 }]}
+{ "threads": [{ "name": "riot_cpp_thread", "stack_size": 3584, "stack_used": 3580 }]}
+Done
+
+Try_lock ...
+{ "threads": [{ "name": "riot_cpp_thread", "stack_size": 3584, "stack_used": 3580 }]}
+{ "threads": [{ "name": "riot_cpp_thread", "stack_size": 3584, "stack_used": 3580 }]}
+Done
+
+Bye, bye.
+*****************************************

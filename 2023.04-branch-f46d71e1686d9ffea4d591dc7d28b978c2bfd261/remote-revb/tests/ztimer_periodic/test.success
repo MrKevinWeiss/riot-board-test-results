@@ -1,0 +1,23 @@
+r
+/srv/jenkins-slave/workspace/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyUSB0" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyUSB0
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+Testing clock: ZTIMER_MSEC
+i: 0 time: 3225 offset: 0
+i: 1 time: 3325 offset: 0
+i: 2 time: 3425 offset: 0
+i: 3 time: 3525 offset: 0
+i: 4 time: 3625 offset: 0
+Testing clock: ZTIMER_USEC
+i: 0 time: 3648056 offset: 23
+i: 1 time: 3658056 offset: 0
+i: 2 time: 3668056 offset: 0
+i: 3 time: 3678056 offset: 0
+i: 4 time: 3688056 offset: 0
+Test successful.
+

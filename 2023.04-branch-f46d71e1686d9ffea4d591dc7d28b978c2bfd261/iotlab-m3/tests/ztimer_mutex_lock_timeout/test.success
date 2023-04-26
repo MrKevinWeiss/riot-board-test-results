@@ -1,0 +1,18 @@
+r
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:m3-11.saclay.iot-lab.info:20000' 
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+Test Application for ztimer_mutex_lock_timeout_timeout()
+================================================
+
+Test on unlocked mutex with zero timeout: OK
+Test on unlocked mutex with small timeout: OK
+Test on unlocked mutex with large timeout: OK
+Test on locked mutex with zero timeout: OK
+Test on locked mutex with small timeout: OK
+Test on locked mutex with large timeout: OK
+TEST PASSED
+{ "threads": [{ "name": "main", "stack_size": 1536, "stack_used": 372 }]}
+

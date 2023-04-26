@@ -1,0 +1,25 @@
+r
+ssh -t rici@grenoble.iot-lab.info 'socat - tcp:nucleo-wl55jc-1.grenoble.iot-lab.info:20000' 
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+xtimer benchmark application.
+
+                     set() one     8333 / 1000 = 8
+                  remove() one     1069 / 1000 = 1
+          set() + remove() one    11753 / 1000 = 11
+  set() many increasing target   128547 / 1000 = 128
+               re-set()  first     8085 / 1000 = 8
+               re-set() middle   227127 / 1000 = 227
+               re-set()   last   441353 / 1000 = 441
+       remove() + set()  first    13119 / 1000 = 13
+       remove() + set() middle   232927 / 1000 = 232
+       remove() + set()   last   447066 / 1000 = 447
+      remove() many decreasing   100870 / 1000 = 100
+                  xtimer_now()      918 / 1000 = 0
+              sizeof(xtimer_t)    16000 / 1000 = 16
+done.
+{ "threads": [{ "name": "main", "stack_size": 1536, "stack_used": 416 }]}
+

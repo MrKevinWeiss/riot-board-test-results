@@ -1,0 +1,20 @@
+r
+ssh -t rici@grenoble.iot-lab.info 'socat - tcp:samr34-1.grenoble.iot-lab.info:20000' 
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+counter mode
+THREAD 1 start
+THREAD 2 start
+THREAD 3 start
+thread synced
+THREAD 3 woke main thread
+mask mode
+THREAD 1 start
+THREAD 2 start
+THREAD 3 start
+thread synced
+THREAD 3 woke main thread
+SUCCESS
+

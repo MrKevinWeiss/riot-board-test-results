@@ -1,0 +1,30 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ./tests/unittests test
+Due to limitations in the gcoap API it is currently not possible to use a dual stack setup
+r
+Due to limitations in the gcoap API it is currently not possible to use a dual stack setup
+/srv/jenkins-slave/workspace/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyUSB0" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyUSB0
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+...............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+mtd_tests.test_mtd_init (tests/unittests/tests-mtd/tests-mtd.c 136) exp 0 was -5
+.
+mtd_tests.test_mtd_erase (tests/unittests/tests-mtd/tests-mtd.c 147) exp -139 was 0
+.
+mtd_tests.test_mtd_write_erase (tests/unittests/tests-mtd/tests-mtd.c 172) exp 0 was -139
+.
+mtd_tests.test_mtd_write_read (tests/unittests/tests-mtd/tests-mtd.c 194) exp 0 was -139
+.
+mtd_tests.test_mtd_write_read_flash (tests/unittests/tests-mtd/tests-mtd.c 261) exp 0 was -139
+.
+mtd_tests.test_mtd_vfs (tests/unittests/tests-mtd/tests-mtd.c 285) exp 9 was -28
+..............................................................................................................................................................................................................................................................................................................................................................................................
+run 1154 failures 6
+Timeout in expect script at "child.expect(r'OK \((\d+) tests\)', timeout=timeout)" (dist/pythonlibs/testrunner/__init__.py:57)
+
+make: *** [/srv/jenkins-slave/workspace/RIOT/makefiles/tests/tests.inc.mk:26: test] Error 1
+
+Return value: 2

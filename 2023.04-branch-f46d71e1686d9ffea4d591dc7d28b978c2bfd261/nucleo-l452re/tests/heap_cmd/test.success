@@ -1,0 +1,24 @@
+
+
+/srv/jenkins-slave/workspace/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM2" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM2
+Welcome to pyterm!
+Type '/exit' to exit.
+Version: buildte
+> 
+> heap
+heap
+heap: 161296 (used 2500, free 158796) [bytes]
+> malloc 100
+malloc 100
+allocated 0x200013b8
+> heap
+heap
+heap: 161296 (used 2608, free 158688) [bytes]
+free 0x200013b8
+> free 0x200013b8
+freeing 0x200013b8
+> heap
+heap
+heap: 161296 (used 2500, free 158796) [bytes]
+> 

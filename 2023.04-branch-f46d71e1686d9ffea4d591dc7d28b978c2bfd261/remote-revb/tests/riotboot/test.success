@@ -1,0 +1,97 @@
+
+
+/srv/jenkins-slave/workspace/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyUSB0" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyUSB0
+Welcome to pyterm!
+Type '/exit' to exit.
+
+> 
+> curslotnr
+curslotnr
+Current slot=0
+> curslothdr
+curslothdr
+Image magic_number: 0x544f4952
+Image Version: 0x6447976c
+compiling /srv/jenkins-slave/workspace/RIOT/dist/tools/riotboot_gen_hdr/bin/genhdr...
+make: Nothing to be done for 'all'.
+creating /srv/jenkins-slave/workspace/RIOT/tests/riotboot/bin/remote-revb/riotboot_files/slot1.1682413421.bin...
+/srv/jenkins-slave/workspace/RIOT/dist/tools/cc2538-bsl/cc2538-bsl.py  -a 0x00240000 -p "/dev/ttyUSB0"  --write-erase -v -b 460800 /srv/jenkins-slave/workspace/RIOT/tests/riotboot/bin/remote-revb/riotboot_files/slot1.1682413421.bin
+Opening port /dev/ttyUSB0, baud 460800
+Reading data from /srv/jenkins-slave/workspace/RIOT/tests/riotboot/bin/remote-revb/riotboot_files/slot1.1682413421.bin
+Cannot auto-detect firmware filetype: Assuming .bin
+Connecting to target...
+CC2538 PG2.0: 512KB Flash, 32KB SRAM, CCFG at 0x0027FFD4
+Primary IEEE Address: 00:12:4B:00:06:0D:61:F8
+    Erase before write done                 
+Writing 15600 bytes starting at address 0x00240000
+ Write 248 bytes at 0x00240000 Write 248 bytes at 0x002400F8 Write 248 bytes at 0x002401F0 Write 248 bytes at 0x002402E8 Write 248 bytes at 0x002403E0 Write 248 bytes at 0x002404D8 Write 248 bytes at 0x002405D0 Write 248 bytes at 0x002406C8 Write 248 bytes at 0x002407C0 Write 248 bytes at 0x002408B8 Write 248 bytes at 0x002409B0 Write 248 bytes at 0x00240AA8 Write 248 bytes at 0x00240BA0 Write 248 bytes at 0x00240C98 Write 248 bytes at 0x00240D90 Write 248 bytes at 0x00240E88 Write 248 bytes at 0x00240F80 Write 248 bytes at 0x00241078 Write 248 bytes at 0x00241170 Write 248 bytes at 0x00241268 Write 248 bytes at 0x00241360 Write 248 bytes at 0x00241458 Write 248 bytes at 0x00241550 Write 248 bytes at 0x00241648 Write 248 bytes at 0x00241740 Write 248 bytes at 0x00241838 Write 248 bytes at 0x00241930 Write 248 bytes at 0x00241A28 Write 248 bytes at 0x00241B20 Write 248 bytes at 0x00241C18 Write 248 bytes at 0x00241D10 Write 248 bytes at 0x00241E08 Write 248 bytes at 0x00241F00 Write 248 bytes at 0x00241FF8 Write 248 bytes at 0x002420F0 Write 248 bytes at 0x002421E8 Write 248 bytes at 0x002422E0 Write 248 bytes at 0x002423D8 Write 248 bytes at 0x002424D0 Write 248 bytes at 0x002425C8 Write 248 bytes at 0x002426C0 Write 248 bytes at 0x002427B8 Write 248 bytes at 0x002428B0 Write 248 bytes at 0x002429A8 Write 248 bytes at 0x00242AA0 Write 248 bytes at 0x00242B98 Write 248 bytes at 0x00242C90 Write 248 bytes at 0x00242D88 Write 248 bytes at 0x00242E80 Write 248 bytes at 0x00242F78 Write 248 bytes at 0x00243070 Write 248 bytes at 0x00243168 Write 248 bytes at 0x00243260 Write 248 bytes at 0x00243358 Write 248 bytes at 0x00243450 Write 248 bytes at 0x00243548 Write 248 bytes at 0x00243640 Write 248 bytes at 0x00243738 Write 248 bytes at 0x00243830 Write 248 bytes at 0x00243928 Write 248 bytes at 0x00243A20 Write 248 bytes at 0x00243B18Write 224 bytes at 0x00243C10
+    Write done                              
+
+
+
+/srv/jenkins-slave/workspace/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyUSB0" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyUSB0
+Welcome to pyterm!
+Type '/exit' to exit.
+
+> 
+> curslotnr
+curslotnr
+Current slot=1
+> curslothdr
+curslothdr
+Image magic_number: 0x544f4952
+Image Version: 0x6447976d
+Image start address: 0x00240400
+Header chksum: 0xf02a9d7a
+
+> getslotaddr 0
+getslotaddr 0
+Slot 0 address=0x00201400
+> dumpaddrs
+dumpaddrs
+slot 0: metadata: 0x201000 image: 0x00201400
+slot 1: metadata: 0x240000 image: 0x00240400
+> compiling /srv/jenkins-slave/workspace/RIOT/dist/tools/riotboot_gen_hdr/bin/genhdr...
+make: Nothing to be done for 'all'.
+creating /srv/jenkins-slave/workspace/RIOT/tests/riotboot/bin/remote-revb/riotboot_files/slot0.1682413422.bin...
+/srv/jenkins-slave/workspace/RIOT/dist/tools/cc2538-bsl/cc2538-bsl.py  -a 0x00201000 -p "/dev/ttyUSB0"  --write-erase -v -b 460800 /srv/jenkins-slave/workspace/RIOT/tests/riotboot/bin/remote-revb/riotboot_files/slot0.1682413422.bin
+Opening port /dev/ttyUSB0, baud 460800
+Reading data from /srv/jenkins-slave/workspace/RIOT/tests/riotboot/bin/remote-revb/riotboot_files/slot0.1682413422.bin
+Cannot auto-detect firmware filetype: Assuming .bin
+Connecting to target...
+CC2538 PG2.0: 512KB Flash, 32KB SRAM, CCFG at 0x0027FFD4
+Primary IEEE Address: 00:12:4B:00:06:0D:61:F8
+    Erase before write done                 
+Writing 15600 bytes starting at address 0x00201000
+ Write 248 bytes at 0x00201000 Write 248 bytes at 0x002010F8 Write 248 bytes at 0x002011F0 Write 248 bytes at 0x002012E8 Write 248 bytes at 0x002013E0 Write 248 bytes at 0x002014D8 Write 248 bytes at 0x002015D0 Write 248 bytes at 0x002016C8 Write 248 bytes at 0x002017C0 Write 248 bytes at 0x002018B8 Write 248 bytes at 0x002019B0 Write 248 bytes at 0x00201AA8 Write 248 bytes at 0x00201BA0 Write 248 bytes at 0x00201C98 Write 248 bytes at 0x00201D90 Write 248 bytes at 0x00201E88 Write 248 bytes at 0x00201F80 Write 248 bytes at 0x00202078 Write 248 bytes at 0x00202170 Write 248 bytes at 0x00202268 Write 248 bytes at 0x00202360 Write 248 bytes at 0x00202458 Write 248 bytes at 0x00202550 Write 248 bytes at 0x00202648 Write 248 bytes at 0x00202740 Write 248 bytes at 0x00202838 Write 248 bytes at 0x00202930 Write 248 bytes at 0x00202A28 Write 248 bytes at 0x00202B20 Write 248 bytes at 0x00202C18 Write 248 bytes at 0x00202D10 Write 248 bytes at 0x00202E08 Write 248 bytes at 0x00202F00 Write 248 bytes at 0x00202FF8 Write 248 bytes at 0x002030F0 Write 248 bytes at 0x002031E8 Write 248 bytes at 0x002032E0 Write 248 bytes at 0x002033D8 Write 248 bytes at 0x002034D0 Write 248 bytes at 0x002035C8 Write 248 bytes at 0x002036C0 Write 248 bytes at 0x002037B8 Write 248 bytes at 0x002038B0 Write 248 bytes at 0x002039A8 Write 248 bytes at 0x00203AA0 Write 248 bytes at 0x00203B98 Write 248 bytes at 0x00203C90 Write 248 bytes at 0x00203D88 Write 248 bytes at 0x00203E80 Write 248 bytes at 0x00203F78 Write 248 bytes at 0x00204070 Write 248 bytes at 0x00204168 Write 248 bytes at 0x00204260 Write 248 bytes at 0x00204358 Write 248 bytes at 0x00204450 Write 248 bytes at 0x00204548 Write 248 bytes at 0x00204640 Write 248 bytes at 0x00204738 Write 248 bytes at 0x00204830 Write 248 bytes at 0x00204928 Write 248 bytes at 0x00204A20 Write 248 bytes at 0x00204B18Write 224 bytes at 0x00204C10
+    Write done                              
+
+
+
+/srv/jenkins-slave/workspace/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyUSB0" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyUSB0
+Welcome to pyterm!
+Type '/exit' to exit.
+
+> 
+> curslotnr
+curslotnr
+Current slot=0
+> curslothdr
+curslothdr
+Image magic_number: 0x544f4952
+Image Version: 0x6447976e
+Image start address: 0x00201400
+Header chksum: 0x102bad77
+
+> getslotaddr 0
+getslotaddr 0
+Slot 0 address=0x00201400
+> dumpaddrs
+dumpaddrs
+slot 0: metadata: 0x201000 image: 0x00201400
+slot 1: metadata: 0x240000 image: 0x00240400
+> 
+TEST PASSED

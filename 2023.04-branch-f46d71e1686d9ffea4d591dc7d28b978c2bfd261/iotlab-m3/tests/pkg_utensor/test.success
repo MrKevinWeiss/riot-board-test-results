@@ -1,0 +1,11 @@
+r
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:m3-11.saclay.iot-lab.info:20000' 
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+Simple MNIST end-to-end uTensor cli example (device)
+
+Predicted label: 7
+{ "threads": [{ "name": "main", "stack_size": 2048, "stack_used": 1400 }]}
+

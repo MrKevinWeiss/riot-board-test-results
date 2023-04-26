@@ -1,0 +1,21 @@
+r
+ssh -t rici@grenoble.iot-lab.info 'socat - tcp:nucleo-wl55jc-1.grenoble.iot-lab.info:20000' 
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+posting periodic timed callback with timeout 1sec
+waiting for periodic callback to be triggered 4 times
+trigger 1 of periodic timeout, elapsed time: 1000000 us
+trigger 2 of periodic timeout, elapsed time: 1000000 us
+stop periodic event
+resume periodic event, 2 triggers remaining
+trigger 3 of periodic timeout, elapsed time: 1000000 us
+trigger 4 of periodic timeout, elapsed time: 1000000 us
+posting timed callback with timeout 0.5sec, clear right after
+posting timed callback with timeout 1sec
+waiting for timed callback to trigger
+triggered timed callback after 1000025us
+[SUCCESS]
+

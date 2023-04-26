@@ -1,0 +1,24 @@
+r
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:m3-11.saclay.iot-lab.info:20000' 
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+xtimer benchmark application.
+
+                     set() one     7112 / 1000 = 7
+                  remove() one     1145 / 1000 = 1
+          set() + remove() one    12029 / 1000 = 12
+  set() many increasing target   101160 / 1000 = 101
+               re-set()  first     6946 / 1000 = 6
+               re-set() middle   216600 / 1000 = 216
+               re-set()   last   421011 / 1000 = 421
+       remove() + set()  first    11752 / 1000 = 11
+       remove() + set() middle   221717 / 1000 = 221
+       remove() + set()   last   425930 / 1000 = 425
+      remove() many decreasing   117273 / 1000 = 117
+                  xtimer_now()     1683 / 1000 = 1
+              sizeof(xtimer_t)    16000 / 1000 = 16
+done.
+{ "threads": [{ "name": "main", "stack_size": 1536, "stack_used": 416 }]}
+

@@ -1,0 +1,4 @@
+O
+ssh -t rici@grenoble.iot-lab.info 'socat - tcp:samr34-1.grenoble.iot-lab.info:20000' 
+You entered 'O'
+You 

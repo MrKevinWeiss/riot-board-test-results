@@ -1,0 +1,12 @@
+r
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:m3-11.saclay.iot-lab.info:20000' 
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+You are running RIOT on a(n) iotlab-m3 board.
+This board features a(n) stm32 MCU.
+Starting ed25519 test.
+The signature is valid!
+{ "threads": [{ "name": "main", "stack_size": 2048, "stack_used": 1816 }]}
+

@@ -1,0 +1,169 @@
+
+
+/srv/jenkins-slave/workspace/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM2" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM2
+Welcome to pyterm!
+Type '/exit' to exit.
+
+> 
+> curslotnr
+curslotnr
+Current slot=0
+> curslothdr
+curslothdr
+Image magic_number: 0x544f4952
+Image Version: 0x64479c55
+compiling /srv/jenkins-slave/workspace/RIOT/dist/tools/riotboot_gen_hdr/bin/genhdr...
+make: Nothing to be done for 'all'.
+creating /srv/jenkins-slave/workspace/RIOT/tests/riotboot/bin/nucleo-l452re/riotboot_files/slot1.1682414678.bin...
+/srv/jenkins-slave/workspace/RIOT/dist/tools/openocd/openocd.sh flash /srv/jenkins-slave/workspace/RIOT/tests/riotboot/bin/nucleo-l452re/riotboot_files/slot1.1682414678.bin
+### Flashing Target ###
+Binfile detected, adding ROM base address: 0x08000000
+Flashing with IMAGE_OFFSET: 0x08040800
+xPack OpenOCD x86_64 Open On-Chip Debugger 0.11.0+dev (2022-03-25-17:31)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+DEPRECATED! use 'adapter serial' not 'hla_serial'
+hla_swd
+DEPRECATED! use 'adapter serial' not 'hla_serial'
+Warn : Transport "hla_swd" was already selected
+hla_swd
+Info : The selected transport took over low-level target control. The results might differ compared to plain JTAG/SWD
+Info : DEPRECATED target event trace-config; use TPIU events {pre,post}-{enable,disable}
+srst_only separate srst_nogate srst_open_drain connect_assert_srst
+
+Info : clock speed 500 kHz
+Info : STLINK V2J29M18 (API v2) VID:PID 0483:374B
+Info : Target voltage: 3.250952
+Info : [stm32l4x.cpu] Cortex-M4 r0p1 processor detected
+Info : [stm32l4x.cpu] target has 6 breakpoints, 4 watchpoints
+Info : starting gdb server for stm32l4x.cpu on 0
+Info : Listening on port 46193 for gdb connections
+    TargetName         Type       Endian TapName            State       
+--  ------------------ ---------- ------ ------------------ ------------
+ 0* stm32l4x.cpu       hla_target little stm32l4x.cpu       reset
+
+Info : Unable to match requested speed 500 kHz, using 480 kHz
+Info : Unable to match requested speed 500 kHz, using 480 kHz
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x080003d0 msp: 0x20000200
+Info : device idcode = 0x20016462 (STM32L45/L46xx - Rev Y : 0x2001)
+Info : RDP level 0 (0xAA)
+Info : flash size = 512kbytes
+Info : flash mode : single-bank
+Info : Padding image section 0 at 0x0804451c with 4 bytes (bank write end alignment)
+Warn : Adding extra erase range, 0x08044520 .. 0x080447ff
+auto erase enabled
+wrote 15648 bytes from file /srv/jenkins-slave/workspace/RIOT/tests/riotboot/bin/nucleo-l452re/riotboot_files/slot1.1682414678.bin in 0.940129s (16.254 KiB/s)
+
+verified 15644 bytes in 0.506736s (30.149 KiB/s)
+
+Info : Unable to match requested speed 500 kHz, using 480 kHz
+Info : Unable to match requested speed 500 kHz, using 480 kHz
+shutdown command invoked
+Done flashing
+
+
+
+/srv/jenkins-slave/workspace/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM2" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM2
+Welcome to pyterm!
+Type '/exit' to exit.
+
+> 
+> curslotnr
+curslotnr
+Current slot=1
+> curslothdr
+curslothdr
+Image magic_number: 0x544f4952
+Image Version: 0x64479c56
+Image start address: 0x08040c00
+Header chksum: 0x1bafb243
+
+> getslotaddr 0
+getslotaddr 0
+Slot 0 address=0x08001400
+> dumpaddrs
+dumpaddrs
+slot 0: metadata: 0x8001000 image: 0x08001400
+slot 1: metadata: 0x8040800 image: 0x08040c00
+> compiling /srv/jenkins-slave/workspace/RIOT/dist/tools/riotboot_gen_hdr/bin/genhdr...
+make: Nothing to be done for 'all'.
+creating /srv/jenkins-slave/workspace/RIOT/tests/riotboot/bin/nucleo-l452re/riotboot_files/slot0.1682414679.bin...
+/srv/jenkins-slave/workspace/RIOT/dist/tools/openocd/openocd.sh flash /srv/jenkins-slave/workspace/RIOT/tests/riotboot/bin/nucleo-l452re/riotboot_files/slot0.1682414679.bin
+### Flashing Target ###
+Binfile detected, adding ROM base address: 0x08000000
+Flashing with IMAGE_OFFSET: 0x08001000
+xPack OpenOCD x86_64 Open On-Chip Debugger 0.11.0+dev (2022-03-25-17:31)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+DEPRECATED! use 'adapter serial' not 'hla_serial'
+hla_swd
+DEPRECATED! use 'adapter serial' not 'hla_serial'
+Warn : Transport "hla_swd" was already selected
+hla_swd
+Info : The selected transport took over low-level target control. The results might differ compared to plain JTAG/SWD
+Info : DEPRECATED target event trace-config; use TPIU events {pre,post}-{enable,disable}
+srst_only separate srst_nogate srst_open_drain connect_assert_srst
+
+Info : clock speed 500 kHz
+Info : STLINK V2J29M18 (API v2) VID:PID 0483:374B
+Info : Target voltage: 3.249376
+Info : [stm32l4x.cpu] Cortex-M4 r0p1 processor detected
+Info : [stm32l4x.cpu] target has 6 breakpoints, 4 watchpoints
+Info : starting gdb server for stm32l4x.cpu on 0
+Info : Listening on port 35069 for gdb connections
+    TargetName         Type       Endian TapName            State       
+--  ------------------ ---------- ------ ------------------ ------------
+ 0* stm32l4x.cpu       hla_target little stm32l4x.cpu       reset
+
+Info : Unable to match requested speed 500 kHz, using 480 kHz
+Info : Unable to match requested speed 500 kHz, using 480 kHz
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x080003d0 msp: 0x20000200
+Info : device idcode = 0x20016462 (STM32L45/L46xx - Rev Y : 0x2001)
+Info : RDP level 0 (0xAA)
+Info : flash size = 512kbytes
+Info : flash mode : single-bank
+Info : Padding image section 0 at 0x08004d1c with 4 bytes (bank write end alignment)
+Warn : Adding extra erase range, 0x08004d20 .. 0x08004fff
+auto erase enabled
+wrote 15648 bytes from file /srv/jenkins-slave/workspace/RIOT/tests/riotboot/bin/nucleo-l452re/riotboot_files/slot0.1682414679.bin in 0.945995s (16.154 KiB/s)
+
+verified 15644 bytes in 0.503736s (30.328 KiB/s)
+
+Info : Unable to match requested speed 500 kHz, using 480 kHz
+Info : Unable to match requested speed 500 kHz, using 480 kHz
+shutdown command invoked
+Done flashing
+
+
+
+/srv/jenkins-slave/workspace/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM2" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM2
+Welcome to pyterm!
+Type '/exit' to exit.
+
+> 
+> curslotnr
+curslotnr
+Current slot=0
+> curslothdr
+curslothdr
+Image magic_number: 0x544f4952
+Image Version: 0x64479c57
+Image start address: 0x08001400
+Header chksum: 0x2bafba40
+
+> getslotaddr 0
+getslotaddr 0
+Slot 0 address=0x08001400
+> dumpaddrs
+dumpaddrs
+slot 0: metadata: 0x8001000 image: 0x08001400
+slot 1: metadata: 0x8040800 image: 0x08040c00
+> 
+TEST PASSED

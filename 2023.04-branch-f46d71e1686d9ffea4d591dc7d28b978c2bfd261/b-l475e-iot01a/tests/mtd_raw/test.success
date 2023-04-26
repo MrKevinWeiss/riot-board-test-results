@@ -1,0 +1,12 @@
+
+
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:st-iotnode-10.saclay.iot-lab.info:20000' 
+is is RIOT! (Version: buildtest)
+Manual MTD test
+no MTD device present on the board.
+> info
+
+> 
+> info
+mtd devices: 0
+> 

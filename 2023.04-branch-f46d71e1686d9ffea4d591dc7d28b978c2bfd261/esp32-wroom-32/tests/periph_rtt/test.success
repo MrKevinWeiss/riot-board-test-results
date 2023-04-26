@@ -1,0 +1,40 @@
+r
+/srv/jenkins-slave/workspace/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyUSB1" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyUSB1
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+
+RIOT RTT low-level driver test
+RTT configuration:
+RTT_MAX_VALUE: 0xffffffff
+RTT_FREQUENCY: 32768
+
+Testing the tick conversion
+Trying to convert 1 to seconds and back
+Trying to convert 256 to seconds and back
+Trying to convert 65536 to seconds and back
+Trying to convert 16777216 to seconds and back
+Trying to convert 2147483648 to seconds and back
+All ok
+
+Initializing the RTT driver
+This test will now display 'Hello' every 5 seconds
+
+RTT now: 269529
+Setting RTT timer to 1337
+RTT now: 1338
+rtt_set_counter() PASSED
+Setting initial alarm to now + 5 s (165178)
+rtt_get_alarm() PASSED
+Done setting up the RTT, wait for many Hellos
+{ "threads": [{ "name": "idle", "stack_size": 2048, "stack_used": 2048 }]}
+Hello
+Hello
+Hello
+Hello
+Hello
+

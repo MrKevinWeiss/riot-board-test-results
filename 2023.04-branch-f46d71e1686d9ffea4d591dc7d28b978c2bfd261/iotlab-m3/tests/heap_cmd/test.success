@@ -1,0 +1,21 @@
+
+
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:m3-11.saclay.iot-lab.info:20000' 
+
+> 
+> heap
+heap
+heap: 62992 (used 2500, free 60492) [bytes]
+> malloc 100
+malloc 100
+allocated 0x200013b8
+> heap
+heap
+heap: 62992 (used 2608, free 60384) [bytes]
+> free 0x200013b8
+free 0x200013b8
+freeing 0x200013b8
+> heap
+heap
+heap: 62992 (used 2500, free 60492) [bytes]
+> 

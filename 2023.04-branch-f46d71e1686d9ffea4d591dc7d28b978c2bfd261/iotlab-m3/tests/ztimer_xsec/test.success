@@ -1,0 +1,18 @@
+r
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:m3-11.saclay.iot-lab.info:20000' 
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+starting ztimers
+time Wait:	3669799
+waiting for locks
+USEC
+MSEC
+SEC
+time SEC:	4669576
+time MSEC:	3869680
+time USEC:	3769800
+SUCCESS!
+{ "threads": [{ "name": "main", "stack_size": 1536, "stack_used": 380 }]}
+

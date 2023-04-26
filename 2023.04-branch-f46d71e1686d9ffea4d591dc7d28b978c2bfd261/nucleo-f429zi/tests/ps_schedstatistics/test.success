@@ -1,0 +1,36 @@
+r
+/srv/jenkins-slave/workspace/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM4" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM4
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+Creating thread #0, next=1
+Creating thread #1, next=2
+Creating thread #2, next=3
+Creating thread #3, next=4
+Creating thread #4, next=0
+
+> help
+
+> 
+> help
+Command              Description
+---------------------------------------
+pm                   interact with layered PM subsystem
+ps                   Prints information about running threads.
+reboot               Reboot the node
+ps
+version              Prints current RIOT_VERSION
+> ps
+	pid | name                 | state    Q | pri | stack  ( used) ( free) | base addr  | current     | runtime  | switches  | runtime_usec 
+	  - | isr_stack            | -        - |   - |    512 (  236) (  276) | 0x20000000 | 0x200001c8
+	  1 | main                 | running  Q |   7 |   1536 (  940) (  596) | 0x20001908 | 0x20001b5c  |  1.205% |        56  |      52913 
+	  2 | thread               | bl rx    _ |   6 |   1024 (  412) (  612) | 0x2000042c | 0x2000075c  |  0.094% |        61  |       4140 
+	  3 | thread               | bl rx    _ |   6 |   1024 (  412) (  612) | 0x2000082c | 0x20000b5c  |  0.114% |        65  |       5032 
+	  4 | thread               | bl rx    _ |   6 |   1024 (  412) (  612) | 0x20000c2c | 0x20000f5c  |  0.137% |        69  |       6037 
+	  5 | thread               | bl rx    _ |   6 |   1024 (  412) (  612) | 0x2000102c | 0x2000135c  |  0.162% |        73  |       7131 
+	  6 | thread               | bl rx    _ |   6 |   1024 (  412) (  612) | 0x2000142c | 0x2000175c  |  0.083% |        77  |       3675 
+	    | SUM                  |            |     |   7168 ( 3236) ( 3932)
+> 

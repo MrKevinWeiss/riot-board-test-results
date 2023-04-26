@@ -1,0 +1,26 @@
+r
+/srv/jenkins-slave/workspace/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM4" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM4
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+xtimer benchmark application.
+
+                     set() one     2201 / 1000 = 2
+                  remove() one      291 / 1000 = 0
+          set() + remove() one     3157 / 1000 = 3
+  set() many increasing target    34280 / 1000 = 34
+               re-set()  first     2156 / 1000 = 2
+               re-set() middle    59872 / 1000 = 59
+               re-set()   last   117826 / 1000 = 117
+       remove() + set()  first     3734 / 1000 = 3
+       remove() + set() middle    61443 / 1000 = 61
+       remove() + set()   last   119405 / 1000 = 119
+      remove() many decreasing    26911 / 1000 = 26
+                  xtimer_now()      267 / 1000 = 0
+              sizeof(xtimer_t)    16000 / 1000 = 16
+done.
+

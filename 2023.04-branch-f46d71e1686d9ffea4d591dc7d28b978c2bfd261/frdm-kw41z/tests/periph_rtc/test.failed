@@ -1,0 +1,30 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ./tests/periph_rtc test
+r
+/srv/jenkins-slave/workspace/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+ is ready
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+
+RIOT RTC low-level driver test
+This test will display 'Alarm!' every 2 seconds for 4 times
+Clock value is now   1900-01-00 00:00:00
+  Setting clock to   2020-02-28 23:59:57
+Clock value is now   1900-01-00 00:00:00
+
+Traceback (most recent call last):
+  File "/srv/jenkins-slave/workspace/RIOT/tests/periph_rtc/tests/01-run.py", line 48, in <module>
+    sys.exit(run(testfunc))
+  File "/srv/jenkins-slave/workspace/RIOT/dist/pythonlibs/testrunner/__init__.py", line 30, in run
+    testfunc(child)
+  File "/srv/jenkins-slave/workspace/RIOT/tests/periph_rtc/tests/01-run.py", line 28, in testfunc
+    assert clock_set == clock_value
+AssertionError
+make: *** [/srv/jenkins-slave/workspace/RIOT/makefiles/tests/tests.inc.mk:26: test] Error 1
+
+Return value: 2

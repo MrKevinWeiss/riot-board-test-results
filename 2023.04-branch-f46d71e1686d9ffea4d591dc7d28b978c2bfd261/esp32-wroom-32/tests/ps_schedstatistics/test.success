@@ -1,0 +1,37 @@
+r
+/srv/jenkins-slave/workspace/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyUSB1" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyUSB1
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+Creating thread #0, next=1
+Creating thread #1, next=2
+Creating thread #2, next=3
+Creating thread #3, next=4
+Creating thread #4, next=0
+
+> help
+
+> 
+> help
+Command              Description
+---------------------------------------
+pm                   interact with layered PM subsystem
+ps                   Prints information about running threads.
+reboot               Reboot the node
+ps
+version              Prints current RIOT_VERSION
+> ps
+	pid | name                 | state    Q | pri | stack  ( used) ( free) | base addr  | current     | runtime  | switches  | runtime_usec 
+	  1 | esp_timer            | sleeping _ |   2 |   3636 (  460) ( 3176) | 0x3ffb5608 | 0x3ffb6270  |  0.000% |         0  |          0 
+	  2 | idle                 | pending  Q |  15 |   2048 (  448) ( 1600) | 0x3ffb36d0 | 0x3ffb3d10  | 98.943% |        86  |    5071782 
+	  3 | main                 | running  Q |   7 |   3584 ( 1504) ( 2080) | 0x3ffb3ed0 | 0x3ffb46f0  |  0.567% |        42  |      29068 
+	  4 | thread               | bl rx    _ |   6 |   2048 (  692) ( 1356) | 0x3ffb0df4 | 0x3ffb13f0  |  0.147% |        49  |       7567 
+	  5 | thread               | bl mutex _ |   6 |   2048 (  692) ( 1356) | 0x3ffb15f4 | 0x3ffb1bd0  |  0.216% |        52  |      11105 
+	  6 | thread               | bl rx    _ |   6 |   2048 (  692) ( 1356) | 0x3ffb1df4 | 0x3ffb23f0  |  0.290% |        55  |      14878 
+	  7 | thread               | bl mutex _ |   6 |   2048 (  692) ( 1356) | 0x3ffb25f4 | 0x3ffb2bd0  |  0.381% |        58  |      19554 
+	  8 | thread               | bl rx    _ |   6 |   2048 (  692) ( 1356) | 0x3ffb2df4 | 0x3ffb33f0  |  0.104% |        61  |       5358 
+	    | SUM                  |            |     |  19508 ( 5872) (13636)
+> 

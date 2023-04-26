@@ -1,0 +1,23 @@
+r
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:m3-11.saclay.iot-lab.info:20000' 
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+[START]
+now = 3706, t = 25
+now = 3758, t = 50
+now = 3861, t = 100
+now = 4026, t = 161
+now = 4302, t = 228
+[TRICKLE_RESET]
+now = 4315, t = 12
+now = 4348, t = 29
+now = 4395, t = 43
+now = 4495, t = 79
+now = 4794, t = 249
+now = 5124, t = 321
+now = 5883, t = 568
+[SUCCESS]
+{ "threads": [{ "name": "main", "stack_size": 1536, "stack_used": 416 }]}
+

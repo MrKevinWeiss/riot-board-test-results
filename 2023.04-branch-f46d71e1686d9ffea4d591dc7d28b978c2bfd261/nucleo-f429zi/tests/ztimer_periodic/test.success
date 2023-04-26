@@ -1,0 +1,22 @@
+r
+/srv/jenkins-slave/workspace/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM4" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM4
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+Testing clock: ZTIMER_MSEC
+i: 0 time: 3318 offset: 0
+i: 1 time: 3418 offset: 0
+i: 2 time: 3518 offset: 0
+i: 3 time: 3618 offset: 0
+i: 4 time: 3718 offset: 0
+Testing clock: ZTIMER_USEC
+i: 0 time: 3742151 offset: 2
+i: 1 time: 3752151 offset: 0
+i: 2 time: 3762151 offset: 0
+i: 3 time: 3772151 offset: 0
+i: 4 time: 3782151 offset: 0
+Test successful.

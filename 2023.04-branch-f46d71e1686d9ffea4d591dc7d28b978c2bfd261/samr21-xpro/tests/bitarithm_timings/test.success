@@ -1,0 +1,14 @@
+r
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:samr21-10.saclay.iot-lab.info:20000' 
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+Start.
++ bitarithm_msb: 733000 iterations per second
++ bitarithm_lsb: 1912000 iterations per second
++ bitarithm_bits_set: 325000 iterations per second
++ bitarithm_test_and_clear: 315000 iterations per second
+Done.
+{ "threads": [{ "name": "main", "stack_size": 1536, "stack_used": 484 }]}
+

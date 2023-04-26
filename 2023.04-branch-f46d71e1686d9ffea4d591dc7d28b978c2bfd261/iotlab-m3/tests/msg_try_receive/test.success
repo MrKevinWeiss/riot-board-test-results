@@ -1,0 +1,11 @@
+r
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:m3-11.saclay.iot-lab.info:20000' 
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+main starting
+sending message...
+{ "threads": [{ "name": "second_thread", "stack_size": 1536, "stack_used": 1532 }]}
+msg available: 1 (should be 1!)
+{ "thread

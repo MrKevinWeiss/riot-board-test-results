@@ -1,0 +1,40 @@
+r
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:m3-11.saclay.iot-lab.info:20000' 
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+
+Test for peripheral TIMERs
+
+Available timers: 2
+
+Testing TIMER_0:
+TIMER_0: initialization successful
+TIMER_0: stopped
+TIMER_0: set channel 0 to 5000
+TIMER_0: set channel 1 to 10000
+TIMER_0: set channel 2 to 15000
+TIMER_0: set channel 3 to 20000
+TIMER_0: starting
+TIMER_0: channel 0 fired at SW count    18945 - init:    18945
+TIMER_0: channel 1 fired at SW count    37882 - diff:    18937
+TIMER_0: channel 2 fired at SW count    56819 - diff:    18937
+TIMER_0: channel 3 fired at SW count    75754 - diff:    18935
+
+Testing TIMER_1:
+TIMER_1: initialization successful
+TIMER_1: stopped
+TIMER_1: set channel 0 to 5000
+TIMER_1: set channel 1 to 10000
+TIMER_1: set channel 2 to 15000
+TIMER_1: set channel 3 to 20000
+TIMER_1: starting
+TIMER_1: channel 0 fired at SW count    18945 - init:    18945
+TIMER_1: channel 1 fired at SW count    37882 - diff:    18937
+TIMER_1: channel 2 fired at SW count    56819 - diff:    18937
+TIMER_1: channel 3 fired at SW count    75754 - diff:    18935
+
+TEST SUCCEEDED
+{ "threads": [{ "name": "main", "stack_size": 1536, "stack_used": 412 }]}
+

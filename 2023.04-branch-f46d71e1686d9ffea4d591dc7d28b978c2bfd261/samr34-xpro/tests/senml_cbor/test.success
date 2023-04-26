@@ -1,0 +1,10 @@
+r
+ssh -t rici@grenoble.iot-lab.info 'socat - tcp:samr34-1.grenoble.iot-lab.info:20000' 
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+.
+OK (1 tests)
+{ "threads": [{ "name": "main", "stack_size": 2048, "stack_used": 1736}]}
+

@@ -1,0 +1,71 @@
+r
+/srv/jenkins-slave/workspace/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyUSB1" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyUSB1
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+MAX_NUMBER_BLOCKS: 10
+NUMBER_OF_LOOPS: 1
+NUMBER_OF_TESTS: 1
+Starting (10, 8)
+	pid | name                 | state    Q | pri | stack  ( used) ( free) | base addr  | current     
+	  1 | esp_timer            | sleeping _ |   2 |   3636 (  452) ( 3184) | 0x3ffb2c60 | 0x3ffb38d0 
+	  2 | idle                 | pending  Q |  15 |   2048 (  452) ( 1596) | 0x3ffb0fe4 | 0x3ffb1620 
+	  3 | main                 | running  Q |   7 |   3584 (  820) ( 2764) | 0x3ffb17e4 | 0x3ffb23f0 
+	    | SUM                  |            |     |   9268 ( 1724) ( 7544)
+LOOP #1:
+TEST #1:
+	(0, @@@@@@@) Allocated 16 Bytes at 0x3ffb0efc, total 0
+	(1, @@@@@@@) Allocated 16 Bytes at 0x3ffb0eec, total 16
+	(2, @@@@@@@) Allocated 16 Bytes at 0x3ffb0edc, total 32
+	(3, @@@@@@@) Allocated 16 Bytes at 0x3ffb0ecc, total 48
+	(4, @@@@@@@) Allocated 16 Bytes at 0x3ffb0ebc, total 64
+	(5, @@@@@@@) Allocated 16 Bytes at 0x3ffb0eac, total 80
+	(6, @@@@@@@) Allocated 16 Bytes at 0x3ffb0e9c, total 96
+	(7, @@@@@@@) Allocated 16 Bytes at 0x3ffb0e8c, total 112
+	(8, @@@@@@@) Allocated 16 Bytes at 0x3ffb0e7c, total 128
+	(9, @@@@@@@) Allocated 16 Bytes at 0x3ffb0e6c, total 144
+	Free (0) 16 Bytes at 0x3ffb0efc, total 144
+	Free (1) 16 Bytes at 0x3ffb0eec, total 128
+	Free (2) 16 Bytes at 0x3ffb0edc, total 112
+	Free (3) 16 Bytes at 0x3ffb0ecc, total 96
+	Free (4) 16 Bytes at 0x3ffb0ebc, total 80
+	Free (5) 16 Bytes at 0x3ffb0eac, total 64
+	Free (6) 16 Bytes at 0x3ffb0e9c, total 48
+	Free (7) 16 Bytes at 0x3ffb0e8c, total 32
+	Free (8) 16 Bytes at 0x3ffb0e7c, total 16
+	Free (9) 16 Bytes at 0x3ffb0e6c, total 0
+LOOP #2:
+TEST #1:
+	(0, @@@@@@@) Allocated 16 Bytes at 0x3ffb0efc, total 0
+	(1, @@@@@@@) Allocated 16 Bytes at 0x3ffb0eec, total 16
+	(2, @@@@@@@) Allocated 16 Bytes at 0x3ffb0edc, total 32
+	(3, @@@@@@@) Allocated 16 Bytes at 0x3ffb0ecc, total 48
+	(4, @@@@@@@) Allocated 16 Bytes at 0x3ffb0ebc, total 64
+	(5, @@@@@@@) Allocated 16 Bytes at 0x3ffb0eac, total 80
+	(6, @@@@@@@) Allocated 16 Bytes at 0x3ffb0e9c, total 96
+	(7, @@@@@@@) Allocated 16 Bytes at 0x3ffb0e8c, total 112
+	(8, @@@@@@@) Allocated 16 Bytes at 0x3ffb0e7c, total 128
+	(9, @@@@@@@) Allocated 16 Bytes at 0x3ffb0e6c, total 144
+	Free (0) 16 Bytes at 0x3ffb0efc, total 144
+	Free (1) 16 Bytes at 0x3ffb0eec, total 128
+	Free (2) 16 Bytes at 0x3ffb0edc, total 112
+	Free (3) 16 Bytes at 0x3ffb0ecc, total 96
+	Free (4) 16 Bytes at 0x3ffb0ebc, total 80
+	Free (5) 16 Bytes at 0x3ffb0eac, total 64
+	Free (6) 16 Bytes at 0x3ffb0e9c, total 48
+	Free (7) 16 Bytes at 0x3ffb0e8c, total 32
+	Free (8) 16 Bytes at 0x3ffb0e7c, total 16
+	Free (9) 16 Bytes at 0x3ffb0e6c, total 0
+Extend and reduce tests
+Memarray available: 10
+Memarray available: 20
+Memarray reduction: 0 available: 10
+Memarray reduction: -1 available: 10
+Memarray reduction: 0 available: 0
+Memarray available: 9
+Memarray reduction: -1 available: 9
+Finishing

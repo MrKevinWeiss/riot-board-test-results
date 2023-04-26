@@ -1,0 +1,18 @@
+r
+/srv/jenkins-slave/workspace/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+o start test, r to print it is ready
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+This test tests re-setting of an already active timer.
+It should print three times "now=<value>", with values approximately 100ms (100000us) apart.
+now=3159362
+now=3259429
+now=3359375
+Test completed!
+

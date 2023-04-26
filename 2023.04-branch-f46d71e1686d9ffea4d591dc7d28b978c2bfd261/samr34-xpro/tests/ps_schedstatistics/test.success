@@ -1,0 +1,33 @@
+r
+ssh -t rici@grenoble.iot-lab.info 'socat - tcp:samr34-1.grenoble.iot-lab.info:20000' 
+READY
+s
+START
+Creating thread #0, next=1
+Creating thread #1, next=2
+Creating thread #2, next=3
+Creating thread #3, next=4
+Creating thread #4, next=0
+
+> 
+> 
+> help
+help
+Command              Description
+---------------------------------------
+pm                   interact with layered PM subsystem
+ps                   Prints information about running threads.
+reboot               Reboot the node
+version              Prints current RIOT_VERSION
+> ps
+ps
+	pid | name                 | state    Q | pri | stack  ( used) ( free) | base addr  | current     | runtime  | switches  | runtime_usec 
+	  - | isr_stack            | -        - |   - |    512 (  264) (  248) | 0x20000000 | 0x200001c0
+	  1 | main                 | running  Q |   7 |   1536 (  828) (  708) | 0x20001908 | 0x20001bcc  |  1.090% |        55  |      53390 
+	  2 | thread               | bl rx    _ |   6 |   1024 (  452) (  572) | 0x2000042c | 0x20000754  |  0.707% |        85  |      34625 
+	  3 | thread               | bl rx    _ |   6 |   1024 (  452) (  572) | 0x2000082c | 0x20000b54  |  1.055% |        89  |      51651 
+	  4 | thread               | bl rx    _ |   6 |   1024 (  452) (  572) | 0x20000c2c | 0x20000f54  |  1.431% |        93  |      70066 
+	  5 | thread               | bl rx    _ |   6 |   1024 (  452) (  572) | 0x2000102c | 0x20001354  |  1.837% |        97  |      89952 
+	  6 | thread               | bl rx    _ |   6 |   1024 (  452) (  572) | 0x2000142c | 0x20001754  |  0.473% |       101  |      23178 
+	    | SUM                  |            |     |   7168 ( 3352) ( 3816)
+> 

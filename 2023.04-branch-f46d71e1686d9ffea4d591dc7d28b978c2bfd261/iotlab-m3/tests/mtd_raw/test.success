@@ -1,0 +1,18 @@
+
+
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:m3-11.saclay.iot-lab.info:20000' 
+
+> 
+> info
+info
+mtd devices: 1
+ -=[ MTD_0 ]=-
+sectors: 4096
+pages per sector: 16
+page size: 256
+total: 16 MiB
+> test 0
+test 0
+[START]
+[SUCCESS]
+> 

@@ -1,0 +1,30 @@
+r
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:samr21-10.saclay.iot-lab.info:20000' 
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+
+************ C++ condition_variable test ***********
+Wait with predicate and notify one ... 
+{ "threads": [{ "name": "riot_cpp_thread", "stack_size": 1536, "stack_used": 1532 }]}
+Done
+
+Wait and notify all ...
+{ "threads": [{ "name": "riot_cpp_thread", "stack_size": 1536, "stack_used": 1532 }]}
+{ "threads": [{ "name": "riot_cpp_thread", "stack_size": 1536, "stack_used": 1532 }]}
+{ "threads": [{ "name": "riot_cpp_thread", "stack_size": 1536, "stack_used": 1248 }]}
+{ "threads": [{ "name": "riot_cpp_thread", "stack_size": 1536, "stack_used": 1532 }]}
+Done
+
+Wait for ...
+Done
+
+Wait until ...
+Done
+
+Bye, bye. 
+******************************************************
+
+{ "threads": [{ "name": "main", "stack_size": 1536, "stack_used": 468 }]}
+

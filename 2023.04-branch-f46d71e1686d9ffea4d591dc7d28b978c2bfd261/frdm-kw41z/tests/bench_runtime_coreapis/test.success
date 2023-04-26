@@ -1,0 +1,29 @@
+r
+/srv/jenkins-slave/workspace/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+t, r to print it is ready
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+Runtime of Selected Core API functions
+
+                 nop loop:    104248us  ---   0.104us per call  ---    9592510 calls per sec
+
+             mutex_init():         0us  ---   0.000us per call  ---  4294967295 calls per sec
+        mutex lock/unlock:   1646790us  ---   1.646us per call  ---     607241 calls per sec
+
+       thread_flags_set():    854675us  ---   0.854us per call  ---    1170035 calls per sec
+     thread_flags_clear():    979737us  ---   0.979us per call  ---    1020682 calls per sec
+thread flags set/wait any:   2709931us  ---   2.709us per call  ---     369013 calls per sec
+thread flags set/wait all:   2292999us  ---   2.292us per call  ---     436110 calls per sec
+thread flags set/wait one:   2709930us  ---   2.709us per call  ---     369013 calls per sec
+
+        msg_try_receive():   1459198us  ---   1.459us per call  ---     685307 calls per sec
+              msg_avail():    375213us  ---   0.375us per call  ---    2665152 calls per sec
+
+[SUCCESS]
+

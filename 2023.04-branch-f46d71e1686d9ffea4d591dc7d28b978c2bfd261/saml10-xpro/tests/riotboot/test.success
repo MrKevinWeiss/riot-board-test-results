@@ -1,0 +1,103 @@
+
+
+/srv/jenkins-slave/workspace/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM3" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM3
+Welcome to pyterm!
+Type '/exit' to exit.
+
+> 
+> curslotnr
+curslotnr
+Current slot=0
+> curslothdr
+curslothdr
+Image magic_number: 0x544f4952
+Image Version: 0x6447965a
+compiling /srv/jenkins-slave/workspace/RIOT/dist/tools/riotboot_gen_hdr/bin/genhdr...
+make: Nothing to be done for 'all'.
+creating /srv/jenkins-slave/workspace/RIOT/tests/riotboot/bin/saml10-xpro/riotboot_files/slot1.1682413147.bin...
+/srv/jenkins-slave/workspace/RIOT/dist/tools/edbg/edbg.sh flash /srv/jenkins-slave/workspace/RIOT/tests/riotboot/bin/saml10-xpro/riotboot_files/slot1.1682413147.bin
+### Flashing Target ###
+Debugger: ATMEL EDBG CMSIS-DAP ATML2769041800000967 03.25.01B6 (S)
+Clock frequency: 16.0 MHz
+Target: SAM L10E16A (Rev B)
+Verification...
+at address 0x8800 expected 0x52, read 0x00
+Error: verification failed
+Debugger: ATMEL EDBG CMSIS-DAP ATML2769041800000967 03.25.01B6 (S)
+Clock frequency: 16.0 MHz
+Target: SAM L10E16A (Rev B)
+Programming.................................................................. done.
+Verification.................................................................. done.
+Done flashing
+
+
+
+/srv/jenkins-slave/workspace/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM3" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM3
+Welcome to pyterm!
+Type '/exit' to exit.
+
+> 
+> curslotnr
+curslotnr
+Current slot=1
+> curslothdr
+curslothdr
+Image magic_number: 0x544f4952
+Image Version: 0x6447965b
+Image start address: 0x00009000
+Header chksum: 0x03c02845
+
+> getslotaddr 0
+getslotaddr 0
+Slot 0 address=0x00001800
+> dumpaddrs
+dumpaddrs
+slot 0: metadata: 0x1000 image: 0x00001800
+slot 1: metadata: 0x8800 image: 0x00009000
+> compiling /srv/jenkins-slave/workspace/RIOT/dist/tools/riotboot_gen_hdr/bin/genhdr...
+make: Nothing to be done for 'all'.
+creating /srv/jenkins-slave/workspace/RIOT/tests/riotboot/bin/saml10-xpro/riotboot_files/slot0.1682413148.bin...
+/srv/jenkins-slave/workspace/RIOT/dist/tools/edbg/edbg.sh flash /srv/jenkins-slave/workspace/RIOT/tests/riotboot/bin/saml10-xpro/riotboot_files/slot0.1682413148.bin
+### Flashing Target ###
+Debugger: ATMEL EDBG CMSIS-DAP ATML2769041800000967 03.25.01B6 (S)
+Clock frequency: 16.0 MHz
+Target: SAM L10E16A (Rev B)
+Verification...
+at address 0x1004 expected 0x5c, read 0x5a
+Error: verification failed
+Debugger: ATMEL EDBG CMSIS-DAP ATML2769041800000967 03.25.01B6 (S)
+Clock frequency: 16.0 MHz
+Target: SAM L10E16A (Rev B)
+Programming.................................................................. done.
+Verification.................................................................. done.
+Done flashing
+
+
+
+/srv/jenkins-slave/workspace/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM3" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM3
+Welcome to pyterm!
+Type '/exit' to exit.
+
+> 
+> curslotnr
+curslotnr
+Current slot=0
+> curslothdr
+curslothdr
+Image magic_number: 0x544f4952
+Image Version: 0x6447965c
+Image start address: 0x00001800
+Header chksum: 0x13c3b045
+
+> getslotaddr 0
+getslotaddr 0
+Slot 0 address=0x00001800
+> dumpaddrs
+dumpaddrs
+slot 0: metadata: 0x1000 image: 0x00001800
+slot 1: metadata: 0x8800 image: 0x00009000
+> 
+TEST PASSED

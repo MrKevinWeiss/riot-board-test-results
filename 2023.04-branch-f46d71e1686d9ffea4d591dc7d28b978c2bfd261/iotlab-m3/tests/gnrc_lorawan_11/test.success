@@ -1,0 +1,17 @@
+r
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:m3-11.saclay.iot-lab.info:20000' 
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+- gnrc_lorawan_tests
+1) OK test_gnrc_lorawan__validate_mic
+2) OK test_gnrc_lorawan__wrong_mic
+3) OK test_gnrc_lorawan__build_hdr
+4) OK test_gnrc_lorawan_fopts__mlme_link_check_req
+5) OK test_gnrc_lorawan_fopts__perform
+6) OK test_gnrc_lorawan_fopts__perform_wrong
+
+OK (6 tests)
+{ "threads": [{ "name": "main", "stack_size": 1536, "stack_used": 900 }]}
+

@@ -1,0 +1,20 @@
+
+
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:st-lrwan1-10.saclay.iot-lab.info:20000' 
+NETOPT_TX_END_IRQ not implemented by driver
+main(): This is RIOT! (Version: buildtest)
+Welcome to RIOT!
+> ifconfig
+
+> 
+> ifconfig
+Iface  2  Frequency: 868299987Hz  RSSI: -157 
+           TX-Power: 14dBm  State: SLEEP 
+          L2-PDU:255  
+          
+          Statistics for Layer 2
+            RX packets 0  bytes 0
+            TX packets 0 (Multicast: 0)  bytes 0
+            TX succeeded 0 errors 0
+
+> 

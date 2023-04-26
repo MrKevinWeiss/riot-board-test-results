@@ -1,0 +1,21 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ./tests/mtd_raw test
+
+
+ssh -t rici@grenoble.iot-lab.info 'socat - tcp:samr34-1.grenoble.iot-lab.info:20000' 
+
+> 
+> info
+info
+mtd devices: 1
+ -test 0
+=[ MTD_0 ]=-
+sectors: 0
+pages per sector: 16
+page size: 256
+total: 0 byte
+> test 0
+> Timeout in expect script at "child.expect_exact("[START]")" (tests/mtd_raw/tests/01-run.py:19)
+
+make: *** [/home/runner/work/RIOT/RIOT/makefiles/tests/tests.inc.mk:26: test] Error 1
+
+Return value: 2

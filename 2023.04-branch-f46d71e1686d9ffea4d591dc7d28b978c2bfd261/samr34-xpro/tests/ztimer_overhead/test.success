@@ -1,0 +1,18 @@
+r
+ssh -t rici@grenoble.iot-lab.info 'socat - tcp:samr34-1.grenoble.iot-lab.info:20000' 
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+ZTIMER_USEC auto_adjust params:
+    ZTIMER_USEC->adjust_set = 19
+    ZTIMER_USEC->adjust_sleep = 24
+ZTIMER_USEC auto_adjust params cleared
+zitmer_overhead_set...
+min=19 max=20 avg_diff=19
+zitmer_overhead_sleep...
+min=24 max=25 avg_diff=24
+ZTIMER_USEC adjust params for samr34-xpro:
+    CONFIG_ZTIMER_USEC_ADJUST_SET    19
+    CONFIG_ZTIMER_USEC_ADJUST_SLEEP  24
+

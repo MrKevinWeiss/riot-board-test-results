@@ -1,0 +1,26 @@
+/bin/sh: 1: arm-none-eabi-gcc: not found
+/bin/sh: 1: arm-none-eabi-gcc: not found
+r
+/bin/sh: 1: arm-none-eabi-gcc: not found
+/bin/sh: 1: arm-none-eabi-gcc: not found
+/srv/jenkins-slave/workspace/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyUSB0" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyUSB0
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+calling stack corruption function
+*** RIOT kernel panic:
+ssp: stack smashing detected
+
+*** halted.
+
+
+Context before hardfault:
+   r0: 0x0000000a
+   r1: 0x00000000
+   r2: 0x00000000
+   r3: 0x00000000
+

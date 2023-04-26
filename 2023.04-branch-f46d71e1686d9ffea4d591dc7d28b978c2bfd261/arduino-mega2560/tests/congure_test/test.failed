@@ -1,0 +1,41 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ./tests/congure_test test
+F.F...........F.....F............................
+======================================================================
+FAIL: test_init_success (__main__.TestCongUREWithCongureTestSI)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_test/tests/01-run.py", line 526, in test_init_success
+    self.assertEqual(int(res['init']['last_args']['ctx'], base=16),
+AssertionError: 9029 != 74565
+
+======================================================================
+FAIL: test_report_ecn_ce_success (__main__.TestCongUREWithCongureTestSI)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_test/tests/01-run.py", line 650, in test_report_ecn_ce_success
+    self.assertEqual(res['report_ecn_ce']['last_args']['time'],
+AssertionError: 18446744073709550432 != 64352
+
+======================================================================
+FAIL: test_init_success (__main__.TestCongUREWithSetup)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_test/tests/01-run.py", line 186, in test_init_success
+    self.assertEqual(int(res['init']['last_args']['ctx'], base=16),
+AssertionError: 9029 != 74565
+
+======================================================================
+FAIL: test_report_ecn_ce_success (__main__.TestCongUREWithSetup)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_test/tests/01-run.py", line 490, in test_report_ecn_ce_success
+    self.assertEqual(res['report_ecn_ce']['last_args']['time'],
+AssertionError: 18446744073709550432 != 64352
+
+----------------------------------------------------------------------
+Ran 49 tests in 51.653s
+
+FAILED (failures=4)
+make: *** [/srv/jenkins-slave/workspace/RIOT/makefiles/tests/tests.inc.mk:26: test] Error 1
+
+Return value: 2

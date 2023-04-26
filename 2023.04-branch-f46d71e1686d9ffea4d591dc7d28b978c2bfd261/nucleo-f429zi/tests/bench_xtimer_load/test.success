@@ -1,0 +1,25 @@
+r
+/srv/jenkins-slave/workspace/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM4" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM4
+Welcome to pyterm!
+Type '/exit' to exit.
+o print it is reREADY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+TEST_HZ=64
+[START]
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+drift: min=-1 max=0 final=-1
+jitter: min=-1 max=0 abs avg=0
+[DONE]
+

@@ -1,0 +1,22 @@
+r
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:m3-11.saclay.iot-lab.info:20000' 
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+TEST_HZ=64
+[START]
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+drift: min=-1 max=13 final=-1
+jitter: min=-14 max=14 abs avg=2
+[DONE]
+{ "threads": [{ "name": "main", "stack_siz

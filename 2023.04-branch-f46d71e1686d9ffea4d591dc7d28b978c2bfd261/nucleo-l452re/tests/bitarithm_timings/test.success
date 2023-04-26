@@ -1,0 +1,16 @@
+r
+/srv/jenkins-slave/workspace/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM2" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM2
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+Start.
++ bitarithm_msb: 6399000 iterations per second
++ bitarithm_lsb: 4848000 iterations per second
++ bitarithm_bits_set: 565000 iterations per second
++ bitarithm_test_and_clear: 1038000 iterations per second
+Done.
+

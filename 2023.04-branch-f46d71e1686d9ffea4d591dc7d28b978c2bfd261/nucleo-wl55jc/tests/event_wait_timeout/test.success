@@ -1,0 +1,16 @@
+r
+ssh -t rici@grenoble.iot-lab.info 'socat - tcp:nucleo-wl55jc-1.grenoble.iot-lab.info:20000' 
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+[START] event_wait_timeout test application.
+
+waiting for event with 10ms timeout...
+event_wait time out after 10023us
+waiting for event with 10ms timeout (using uint64)...
+event_wait time out after 10024us
+finished: 4/4 events and 4/4 timeouts recorded
+[SUCCESS]
+

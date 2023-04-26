@@ -1,0 +1,24 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ./tests/phydat_unix test
+r
+/srv/jenkins-slave/workspace/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM1" -b "9600" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM1
+Welcome to pyterm!
+Type '/exit' to exit.
+: Press s to start test, r to print it is ready
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+.
+senml_tests.test_phydat_date_time_to_unix (/data/riotbuild/riotbase/tests/phydat_unix/main.c 194) exp 3600 was 3599
+
+run 1 failures 1
+{ "threads": [{ "name": "idle", "stack_size": 128, "stack_used": 92}]}
+{ "threads": [{ "name": "main", "stack_size": 640, "stack_used": 368}]}
+Timeout in expect script at "child.expect(r'OK \((\d+) tests\)', timeout=timeout)" (dist/pythonlibs/testrunner/__init__.py:57)
+
+make: *** [/srv/jenkins-slave/workspace/RIOT/makefiles/tests/tests.inc.mk:26: test] Error 1
+
+Return value: 2

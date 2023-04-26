@@ -1,0 +1,21 @@
+r
+/srv/jenkins-slave/workspace/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM2" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM2
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+ZTIMER_USEC auto_adjust params:
+    ZTIMER_USEC->adjust_set = 5
+    ZTIMER_USEC->adjust_sleep = 8
+ZTIMER_USEC auto_adjust params cleared
+zitmer_overhead_set...
+min=4 max=4 avg_diff=4
+zitmer_overhead_sleep...
+min=9 max=10 avg_diff=9
+ZTIMER_USEC adjust params for nucleo-l452re:
+    CONFIG_ZTIMER_USEC_ADJUST_SET    4
+    CONFIG_ZTIMER_USEC_ADJUST_SLEEP  9
+

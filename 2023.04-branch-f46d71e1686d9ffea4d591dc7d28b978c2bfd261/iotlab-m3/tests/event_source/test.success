@@ -1,0 +1,13 @@
+r
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:m3-11.saclay.iot-lab.info:20000' 
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+empty event source
+occupied event source
+event C
+event B
+event A
+{ "threads": [{ "name": "main", "stack_size": 1536, "stack_used": 284 }]}
+

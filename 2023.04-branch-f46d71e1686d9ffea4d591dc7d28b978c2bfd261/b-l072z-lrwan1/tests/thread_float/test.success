@@ -1,0 +1,28 @@
+r
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:st-lrwan1-10.saclay.iot-lab.info:20000' 
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+THREADS CREATED
+
+Context switch every 1562 µs
+{ "threads": [{ "name": "main", "stack_size": 1536, "stack_used": 436 }]}
+THREAD t1 start
+THREAD t2 start
+THREAD t3 start
+t1: 141.443787
+t3: 141.466812
+t1: 141.443787
+t3: 141.466812
+t1: 141.443787
+t3: 141.466812
+t1: 141.443787
+t3: 141.466812
+t1: 141.443787
+t3: 141.466812
+t1: 141.443787
+t3: 141.466812
+t1: 141.443787
+

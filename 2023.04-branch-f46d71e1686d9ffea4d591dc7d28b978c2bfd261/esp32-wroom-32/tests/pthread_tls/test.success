@@ -1,0 +1,98 @@
+r
+/srv/jenkins-slave/workspace/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyUSB1" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyUSB1
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+START
+
+-= TEST 1 - create 20 tls with sequential values 0...19 =-
+now rise sequential by one values 1...20
+pick deliberate storage (key[3]:1073433480) and change the value
+show tls values:
+key[0]: 1073433384, val: 1
+key[1]: 1073433416, val: 2
+key[2]: 1073433448, val: 3
+key[3]: 1073433480, val: 42
+key[4]: 1073433512, val: 5
+key[5]: 1073433544, val: 6
+key[6]: 1073433576, val: 7
+key[7]: 1073433608, val: 8
+key[8]: 1073433640, val: 9
+key[9]: 1073433672, val: 10
+key[10]: 1073433704, val: 11
+key[11]: 1073433736, val: 12
+key[12]: 1073433768, val: 13
+key[13]: 1073433800, val: 14
+key[14]: 1073433832, val: 15
+key[15]: 1073433864, val: 16
+key[16]: 1073433896, val: 17
+key[17]: 1073433928, val: 18
+key[18]: 1073433960, val: 19
+key[19]: 1073433992, val: 20
+
+ -= TEST 2 - delete deliberate key (key[5]:1073433544) =-
+show tls values:
+key[0]: 1073433384, val: 1
+key[1]: 1073433416, val: 2
+key[2]: 1073433448, val: 3
+key[3]: 1073433480, val: 42
+key[4]: 1073433512, val: 5
+key[6]: 1073433576, val: 7
+key[7]: 1073433608, val: 8
+key[8]: 1073433640, val: 9
+key[9]: 1073433672, val: 10
+key[10]: 1073433704, val: 11
+key[11]: 1073433736, val: 12
+key[12]: 1073433768, val: 13
+key[13]: 1073433800, val: 14
+key[14]: 1073433832, val: 15
+key[15]: 1073433864, val: 16
+key[16]: 1073433896, val: 17
+key[17]: 1073433928, val: 18
+key[18]: 1073433960, val: 19
+key[19]: 1073433992, val: 20
+
+-= TEST 3 - create new tls =-
+added new tls, key: 1073434024, val: 99
+show tls values:
+key[0]: 1073433384, val: 1
+key[1]: 1073433416, val: 2
+key[2]: 1073433448, val: 3
+key[3]: 1073433480, val: 42
+key[4]: 1073433512, val: 5
+key[6]: 1073433576, val: 7
+key[7]: 1073433608, val: 8
+key[8]: 1073433640, val: 9
+key[9]: 1073433672, val: 10
+key[10]: 1073433704, val: 11
+key[11]: 1073433736, val: 12
+key[12]: 1073433768, val: 13
+key[13]: 1073433800, val: 14
+key[14]: 1073433832, val: 15
+key[15]: 1073433864, val: 16
+key[16]: 1073433896, val: 17
+key[17]: 1073433928, val: 18
+key[18]: 1073433960, val: 19
+key[19]: 1073433992, val: 20
+
+-= TEST 4 - delete all keys =-
+show tls values:
+
+-= TEST 5 - try delete non-existing key =-
+try to delete returns: 0
+
+-= TEST 6 - add key and delete without a tls =-
+created key: 1073434056
+try to delete returns: 0
+
+-= TEST 7 - add key without tls =-
+created key: 1073434072
+test_7_val: 0
+{ "threads": [{ "name": "pthread", "stack_size": 2048, "stack_used": 880 }]}
+tls tests finished.
+SUCCESS
+

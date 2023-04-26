@@ -1,0 +1,15 @@
+r
+ssh -t rici@grenoble.iot-lab.info 'socat - tcp:nucleo-wl55jc-1.grenoble.iot-lab.info:20000' 
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+cb_mux benchmark application
+Populating cb_mux list with 20 items
+Finding the last list entry
+List walk time: 7 us
+Walk time less than threshold of 200 us
+[SUCCESS]
+{ "threads": [{ "name": "main", "stack_size": 1536, "stack_used": 388 }]}
+

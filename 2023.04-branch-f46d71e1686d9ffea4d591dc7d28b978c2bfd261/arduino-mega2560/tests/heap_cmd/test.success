@@ -1,0 +1,32 @@
+
+
+/srv/jenkins-slave/workspace/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM1" -b "9600" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM1
+Welcome to pyterm!
+Type '/exit' to exit.
+rmation on how to use it.
+>  buildtest)
+Shell-based test application for heap functions.
+Use the 'help' command to get more information on how to use it.
+> 
+main(): This is RIOT! (Version: buildtest)
+Shell-based test application for heap functions.
+Use the 'help' command to get more information on how to use it.
+> heap
+
+> 
+> heap
+heap: 6630 (used 0, free 6630) [bytes]
+malloc 100
+> malloc 100
+allocated 0x7f5
+> heap
+heap
+heap: 6630 (used 102, free 6528) [bytes]
+free 0x7f5
+> free 0x7f5
+freeing 0x7f5
+> heap
+heap
+heap: 6630 (used 0, free 6630) [bytes]
+

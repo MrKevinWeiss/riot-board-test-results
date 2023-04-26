@@ -1,0 +1,12 @@
+r
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:st-lrwan1-10.saclay.iot-lab.info:20000' 
+Help: Press s to start test, r to print it is ready
+READYs
+
+START
+main(): This is RIOT! (Version: buildtest)
+Testing etl
+Test: is_same: 1, is_unsigned: 0, vector: cdeab, size: 55 -> valid
+{ "threads": [{ "name": "main", "stack_size": 1536, "stack_used": 396 }]}
+All tests successful
+

@@ -1,0 +1,28 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ./tests/pkg_mbedtls test
+r
+/srv/jenkins-slave/workspace/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyUSB0" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyUSB0
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+mbedtls test
+
+  SHA-224 test #1: passed
+  SHA-224 test #2: passed
+  SHA-224 test #3: passed
+  SHA-256 test #1: passed
+  SHA-256 test #2: passed
+  SHA-256 test #3: passed
+
+adc_noise_single_entropy: 0
+  ENTROPY test: failed
+
+{ "threads": [{ "name": "main", "stack_size": 2048, "stack_used": 1532 }]}
+Timeout in expect script at "child.expect_exact('ENTROPY test: passed')" (tests/pkg_mbedtls/tests/01-run.py:29)
+
+make: *** [/srv/jenkins-slave/workspace/RIOT/makefiles/tests/tests.inc.mk:26: test] Error 1
+
+Return value: 2

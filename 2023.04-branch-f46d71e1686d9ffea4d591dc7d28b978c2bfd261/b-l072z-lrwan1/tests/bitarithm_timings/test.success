@@ -1,0 +1,14 @@
+r
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:st-lrwan1-10.saclay.iot-lab.info:20000' 
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+Start.
++ bitarithm_msb: 529000 iterations per second
++ bitarithm_lsb: 1075000 iterations per second
++ bitarithm_bits_set: 177000 iterations per second
++ bitarithm_test_and_clear: 218000 iterations per second
+Done.
+{ "th

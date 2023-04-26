@@ -1,0 +1,37 @@
+r
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:m3-11.saclay.iot-lab.info:20000' 
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+
+RIOT RTT low-level driver test
+RTT configuration:
+RTT_MAX_VALUE: 0xffffffff
+RTT_FREQUENCY: 16384
+
+Testing the tick conversion
+Trying to convert 1 to seconds and back
+Trying to convert 256 to seconds and back
+Trying to convert 65536 to seconds and back
+Trying to convert 16777216 to seconds and back
+Trying to convert 2147483648 to seconds and back
+All ok
+
+Initializing the RTT driver
+This test will now display 'Hello' every 5 seconds
+
+RTT now: 17
+Setting RTT timer to 1337
+RTT now: 1337
+rtt_set_counter() PASSED
+Setting initial alarm to now + 5 s (83257)
+rtt_get_alarm() PASSED
+Done setting up the RTT, wait for many Hellos
+{ "threads": [{ "name": "main", "stack_size": 1536, "stack_used": 400 }]}
+Hello
+Hello
+Hello
+Hello
+Hello
+

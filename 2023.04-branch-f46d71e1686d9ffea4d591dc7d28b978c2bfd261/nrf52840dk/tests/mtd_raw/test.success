@@ -1,0 +1,23 @@
+make: command: Command not found
+
+
+make[1]: command: Command not found
+/srv/jenkins-slave/workspace/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM5" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM5
+Welcome to pyterm!
+Type '/exit' to exit.
+
+> 
+> info
+info
+mtd devices: 1
+test 0
+ -=[ MTD_0 ]=-
+sectors: 2048
+pages per sector: 16
+page size: 256
+total: 8 MiB
+> test 0
+[START]
+[SUCCESS]
+

@@ -1,0 +1,22 @@
+r
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:samr21-10.saclay.iot-lab.info:20000' 
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+Test application for gnrc_tx_sync
+=================================
+
+This application sends a single UDP datagram over a virtual Ethernet
+or 802.15.4 device. (Set TEST_6LO to 1 for 802.15.4 and to 0 for
+Ethernet.) The simulated network devices blocks for 100ms - more than
+enough time for sock_upd_send() to return if no synchronization is done.
+If an 802.15.4 device is simulated, the test datagram will be transmitted
+in two fragments. In that case sock_udp_send() must only return after both
+fragments are out. In the Ethernet case, only a single frame is send.
+
+IEEE 802.15.4 mode (TEST_6LO=1, TEST_FRAG_SFR=1), sending 2 6LoWPAN fragmentstransmissions expected = 2, transmissions completed = 2
+sent 94 out of 94 bytes
+TEST PASSED
+{ "threads": [{ "name": "main", "stack_size": 1536, "stack_used": 652}]}
+

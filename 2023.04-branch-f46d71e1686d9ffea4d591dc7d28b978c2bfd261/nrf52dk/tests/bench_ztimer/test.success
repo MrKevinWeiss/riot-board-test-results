@@ -1,0 +1,26 @@
+r
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:nrf52dk-10.saclay.iot-lab.info:20000' 
+Help: Press s to start test, r to print it is ready
+Help: Press s to start test, r to print it is ready
+READYs
+
+START
+main(): This is RIOT! (Version: buildtest)
+ztimer benchmark application.
+
+                     set() one    12501 / 1000 = 12
+                  remove() one      919 / 1000 = 0
+          set() + remove() one    23190 / 1000 = 23
+  set() many increasing target   114196 / 1000 = 114
+               re-set()  first    12564 / 1000 = 12
+               re-set() middle    12557 / 1000 = 12
+               re-set()   last    12611 / 1000 = 12
+       remove() + set()  first    23252 / 1000 = 23
+       remove() + set() middle    23252 / 1000 = 23
+       remove() + set()   last    23440 / 1000 = 23
+      remove() many decreasing    66229 / 1000 = 66
+                  ztimer_now()     2751 / 1000 = 2
+              sizeof(ztimer_t)    16000 / 1000 = 16
+done.
+{ "threads": [{ "name": "main", "stack_size": 1536, "stack_used": 408 }]}
+

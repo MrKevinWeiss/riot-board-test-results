@@ -1,0 +1,20 @@
+r
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:samr21-10.saclay.iot-lab.info:20000' 
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+Testing clock: ZTIMER_MSEC
+i: 0 time: 3592 offset: 0
+i: 1 time: 3692 offset: 0
+i: 2 time: 3792 offset: 0
+i: 3 time: 3892 offset: 0
+i: 4 time: 3992 offset: 0
+Testing clock: ZTIMER_USEC
+i: 0 time: 4017222 offset: 47
+i: 1 time: 4027223 offset: 1
+i: 2 time: 4037223 offset: 0
+i: 3 time: 4047223 offset: 0
+i: 4 time: 4057222 offset: 1
+Test successful.
+

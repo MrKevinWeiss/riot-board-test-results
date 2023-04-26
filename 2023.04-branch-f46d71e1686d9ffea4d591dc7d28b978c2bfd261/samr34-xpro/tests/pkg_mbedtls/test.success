@@ -1,0 +1,19 @@
+r
+ssh -t rici@grenoble.iot-lab.info 'socat - tcp:samr34-1.grenoble.iot-lab.info:20000' 
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+mbedtls test
+
+  SHA-224 test #1: passed
+  SHA-224 test #2: passed
+  SHA-224 test #3: passed
+  SHA-256 test #1: passed
+  SHA-256 test #2: passed
+  SHA-256 test #3: passed
+
+adc_noise_single_entropy: 0
+  ENTROPY test: passed
+
+

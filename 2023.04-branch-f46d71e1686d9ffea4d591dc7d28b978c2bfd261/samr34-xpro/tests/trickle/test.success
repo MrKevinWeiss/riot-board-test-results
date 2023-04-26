@@ -1,0 +1,22 @@
+r
+ssh -t rici@grenoble.iot-lab.info 'socat - tcp:samr34-1.grenoble.iot-lab.info:20000' 
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+[START]
+now = 3479, t = 11
+now = 3513, t = 27
+now = 3577, t = 57
+now = 3672, t = 86
+now = 3910, t = 194
+[TRICKLE_RESET]
+now = 3925, t = 13
+now = 3961, t = 31
+now = 4002, t = 38
+now = 4126, t = 96
+now = 4411, t = 251
+now = 4759, t = 341
+now = 5735, t = 803
+[SUCCESS]
+

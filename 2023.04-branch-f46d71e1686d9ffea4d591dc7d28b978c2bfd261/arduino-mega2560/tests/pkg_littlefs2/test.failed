@@ -1,0 +1,22 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ./tests/pkg_littlefs2 test
+r
+/srv/jenkins-slave/workspace/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM1" -b "9600" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM1
+Welcome to pyterm!
+Type '/exit' to exit.
+lp: Press s to start test, r to print it is ready
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+......
+littlefs_tests.tests_littlefs_readdir (/data/riotbuild/riotbase/tests/pkg_littlefs2/main.c 255) fd1 >= 0
+
+Help: Press s to start test, r to print it is ready
+Timeout in expect script at "child.expect(r'OK \((\d+) tests\)', timeout=timeout)" (dist/pythonlibs/testrunner/__init__.py:57)
+
+make: *** [/srv/jenkins-slave/workspace/RIOT/makefiles/tests/tests.inc.mk:26: test] Error 1
+
+Return value: 2

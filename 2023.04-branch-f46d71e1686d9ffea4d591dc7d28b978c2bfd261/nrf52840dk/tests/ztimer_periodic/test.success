@@ -1,0 +1,25 @@
+make: command: Command not found
+r
+make[1]: command: Command not found
+/srv/jenkins-slave/workspace/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM5" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM5
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+Testing clock: ZTIMER_MSEC
+i: 0 time: 3033 offset: 0
+i: 1 time: 3133 offset: 0
+i: 2 time: 3233 offset: 0
+i: 3 time: 3333 offset: 0
+i: 4 time: 3433 offset: 0
+Testing clock: ZTIMER_USEC
+i: 0 time: 3498278 offset: 8
+i: 1 time: 3508278 offset: 0
+i: 2 time: 3518278 offset: 0
+i: 3 time: 3528278 offset: 0
+i: 4 time: 3538278 offset: 0
+Test successful.
+

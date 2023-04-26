@@ -1,0 +1,21 @@
+r
+/srv/jenkins-slave/workspace/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyUSB1" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyUSB1
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+ZTIMER_USEC auto_adjust params:
+    ZTIMER_USEC->adjust_set = 7
+    ZTIMER_USEC->adjust_sleep = 13
+ZTIMER_USEC auto_adjust params cleared
+zitmer_overhead_set...
+min=7 max=7 avg_diff=7
+zitmer_overhead_sleep...
+min=13 max=13 avg_diff=13
+ZTIMER_USEC adjust params for esp32-wroom-32:
+    CONFIG_ZTIMER_USEC_ADJUST_SET    7
+    CONFIG_ZTIMER_USEC_ADJUST_SLEEP  13
+

@@ -1,0 +1,20 @@
+r
+ssh -t rici@grenoble.iot-lab.info 'socat - tcp:nucleo-wl55jc-1.grenoble.iot-lab.info:20000' 
+Help: Press s to start test, r to print it is ready
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+ZTIMER_USEC auto_adjust params:
+    ZTIMER_USEC->adjust_set = 8
+    ZTIMER_USEC->adjust_sleep = 9
+ZTIMER_USEC auto_adjust params cleared
+zitmer_overhead_set...
+min=8 max=8 avg_diff=8
+zitmer_overhead_sleep...
+min=10 max=11 avg_diff=10
+ZTIMER_USEC adjust params for nucleo-wl55jc:
+    CONFIG_ZTIMER_USEC_ADJUST_SET    8
+    CONFIG_ZTIMER_USEC_ADJUST_SLEEP  10
+

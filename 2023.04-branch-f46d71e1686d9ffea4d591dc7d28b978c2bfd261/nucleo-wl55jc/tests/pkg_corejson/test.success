@@ -1,0 +1,10 @@
+r
+ssh -t rici@grenoble.iot-lab.info 'socat - tcp:nucleo-wl55jc-1.grenoble.iot-lab.info:20000' 
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+Found: bar.foo -> xyz
+{ "threads": [{ "name": "main", "stack_size": 1536, "stack_used": 508 }]}
+

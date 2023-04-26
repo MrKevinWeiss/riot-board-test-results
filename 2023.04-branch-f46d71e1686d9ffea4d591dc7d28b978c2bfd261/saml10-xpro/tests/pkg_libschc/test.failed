@@ -1,0 +1,156 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ./tests/pkg_libschc test
+ERROR
+ERROR
+ERROR
+
+======================================================================
+ERROR: setUpClass (__main__.TestCompiledUnittests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/srv/jenkins-slave/workspace/RIOT/dist/pythonlibs/testrunner/unittest.py", line 19, in setUpClass
+    cls.spawn = setup_child(cls.TIMEOUT, logfile=cls.LOGFILE)
+  File "/srv/jenkins-slave/workspace/RIOT/dist/pythonlibs/testrunner/spawn.py", line 95, in setup_child
+    sync_child(child, env)
+  File "/srv/jenkins-slave/workspace/RIOT/dist/pythonlibs/testrunner/spawn.py", line 128, in sync_child
+    utils.test_utils_interactive_sync_shell(child,
+  File "/srv/jenkins-slave/workspace/RIOT/dist/pythonlibs/testrunner/utils.py", line 41, in test_utils_interactive_sync_shell
+    _test_utils_interactive_sync(child, retries, delay, '\n', '>')
+  File "/srv/jenkins-slave/workspace/RIOT/dist/pythonlibs/testrunner/utils.py", line 22, in _test_utils_interactive_sync
+    child.expect_exact(ready_exp, timeout=0)
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/spawnbase.py", line 421, in expect_exact
+    return exp.expect_loop(timeout)
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/expect.py", line 181, in expect_loop
+    return self.timeout(e)
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/expect.py", line 144, in timeout
+    raise exc
+pexpect.exceptions.TIMEOUT: Timeout exceeded.
+<pexpect.pty_spawn.spawn object at 0x7f916599eee0>
+command: /usr/bin/make
+args: [b'/usr/bin/make', b'cleanterm']
+buffer (last 100 chars): '\n'
+before (last 100 chars): "and-on-empty-line \r\nConnect to serial port /dev/ttyACM3\r\nWelcome to pyterm!\r\nType '/exit' to exit.\r\n"
+after: <class 'pexpect.exceptions.TIMEOUT'>
+match: None
+match_index: None
+exitstatus: None
+flag_eof: False
+pid: 4143954
+child_fd: 5
+closed: False
+timeout: 10
+delimiter: <class 'pexpect.exceptions.EOF'>
+logfile: None
+logfile_read: None
+logfile_send: None
+maxread: 2000
+ignorecase: False
+searchwindowsize: None
+delaybeforesend: 0.05
+delayafterclose: 0.1
+delayafterterminate: 0.1
+searcher: searcher_string:
+    0: '>'
+
+======================================================================
+ERROR: setUpClass (__main__.TestFragmentation)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/srv/jenkins-slave/workspace/RIOT/dist/pythonlibs/testrunner/unittest.py", line 19, in setUpClass
+    cls.spawn = setup_child(cls.TIMEOUT, logfile=cls.LOGFILE)
+  File "/srv/jenkins-slave/workspace/RIOT/dist/pythonlibs/testrunner/spawn.py", line 95, in setup_child
+    sync_child(child, env)
+  File "/srv/jenkins-slave/workspace/RIOT/dist/pythonlibs/testrunner/spawn.py", line 128, in sync_child
+    utils.test_utils_interactive_sync_shell(child,
+  File "/srv/jenkins-slave/workspace/RIOT/dist/pythonlibs/testrunner/utils.py", line 41, in test_utils_interactive_sync_shell
+    _test_utils_interactive_sync(child, retries, delay, '\n', '>')
+  File "/srv/jenkins-slave/workspace/RIOT/dist/pythonlibs/testrunner/utils.py", line 22, in _test_utils_interactive_sync
+    child.expect_exact(ready_exp, timeout=0)
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/spawnbase.py", line 421, in expect_exact
+    return exp.expect_loop(timeout)
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/expect.py", line 181, in expect_loop
+    return self.timeout(e)
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/expect.py", line 144, in timeout
+    raise exc
+pexpect.exceptions.TIMEOUT: Timeout exceeded.
+<pexpect.pty_spawn.spawn object at 0x7f916599e2b0>
+command: /usr/bin/make
+args: [b'/usr/bin/make', b'cleanterm']
+buffer (last 100 chars): '\n'
+before (last 100 chars): "and-on-empty-line \r\nConnect to serial port /dev/ttyACM3\r\nWelcome to pyterm!\r\nType '/exit' to exit.\r\n"
+after: <class 'pexpect.exceptions.TIMEOUT'>
+match: None
+match_index: None
+exitstatus: None
+flag_eof: False
+pid: 4144029
+child_fd: 6
+closed: False
+timeout: 10
+delimiter: <class 'pexpect.exceptions.EOF'>
+logfile: None
+logfile_read: None
+logfile_send: None
+maxread: 2000
+ignorecase: False
+searchwindowsize: None
+delaybeforesend: 0.05
+delayafterclose: 0.1
+delayafterterminate: 0.1
+searcher: searcher_string:
+    0: '>'
+
+======================================================================
+ERROR: setUpClass (__main__.TestSelfTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/srv/jenkins-slave/workspace/RIOT/dist/pythonlibs/testrunner/unittest.py", line 19, in setUpClass
+    cls.spawn = setup_child(cls.TIMEOUT, logfile=cls.LOGFILE)
+  File "/srv/jenkins-slave/workspace/RIOT/dist/pythonlibs/testrunner/spawn.py", line 95, in setup_child
+    sync_child(child, env)
+  File "/srv/jenkins-slave/workspace/RIOT/dist/pythonlibs/testrunner/spawn.py", line 128, in sync_child
+    utils.test_utils_interactive_sync_shell(child,
+  File "/srv/jenkins-slave/workspace/RIOT/dist/pythonlibs/testrunner/utils.py", line 41, in test_utils_interactive_sync_shell
+    _test_utils_interactive_sync(child, retries, delay, '\n', '>')
+  File "/srv/jenkins-slave/workspace/RIOT/dist/pythonlibs/testrunner/utils.py", line 22, in _test_utils_interactive_sync
+    child.expect_exact(ready_exp, timeout=0)
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/spawnbase.py", line 421, in expect_exact
+    return exp.expect_loop(timeout)
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/expect.py", line 181, in expect_loop
+    return self.timeout(e)
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/expect.py", line 144, in timeout
+    raise exc
+pexpect.exceptions.TIMEOUT: Timeout exceeded.
+<pexpect.pty_spawn.spawn object at 0x7f9165990d60>
+command: /usr/bin/make
+args: [b'/usr/bin/make', b'cleanterm']
+buffer (last 100 chars): '\n'
+before (last 100 chars): "and-on-empty-line \r\nConnect to serial port /dev/ttyACM3\r\nWelcome to pyterm!\r\nType '/exit' to exit.\r\n"
+after: <class 'pexpect.exceptions.TIMEOUT'>
+match: None
+match_index: None
+exitstatus: None
+flag_eof: False
+pid: 4144104
+child_fd: 7
+closed: False
+timeout: 10
+delimiter: <class 'pexpect.exceptions.EOF'>
+logfile: None
+logfile_read: None
+logfile_send: None
+maxread: 2000
+ignorecase: False
+searchwindowsize: None
+delaybeforesend: 0.05
+delayafterclose: 0.1
+delayafterterminate: 0.1
+searcher: searcher_string:
+    0: '>'
+
+----------------------------------------------------------------------
+Ran 0 tests in 25.197s
+
+FAILED (errors=3)
+make: *** [/srv/jenkins-slave/workspace/RIOT/makefiles/tests/tests.inc.mk:26: test] Error 1
+
+Return value: 2

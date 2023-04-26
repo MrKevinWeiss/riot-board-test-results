@@ -1,0 +1,16 @@
+r
+ssh -t rici@grenoble.iot-lab.info 'socat - tcp:nucleo-wl55jc-1.grenoble.iot-lab.info:20000' 
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+Cross file array test
+xfatest[2]:
+[0] = 1, "xfatest1"
+[1] = 2, "xfatest2"
+xfatest_const[2]:
+[0] = 123, "xfatest_const1"
+[1] = 45, "xfatest_const2"
+{ "threads": [{ "name": "main", "stack_size": 1536, "stack_used": 380 }]}
+

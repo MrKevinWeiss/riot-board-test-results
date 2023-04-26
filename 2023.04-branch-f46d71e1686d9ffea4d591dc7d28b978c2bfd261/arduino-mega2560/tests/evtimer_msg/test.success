@@ -1,0 +1,29 @@
+r
+/srv/jenkins-slave/workspace/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM1" -b "9600" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM1
+Welcome to pyterm!
+Type '/exit' to exit.
+: Press s to start test, r to print it is ready
+
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+Testing generic evtimer
+This should list 2 items
+ev #1 offset=998
+ev #2 offset=501
+This should list 4 items
+ev #1 offset=659
+ev #2 offset=340
+ev #3 offset=501
+ev #4 offset=2454
+Are the reception times of all 4 msgs close to the supposed values?
+At   2779 ms received msg 0: "#2 supposed to be 2778"
+.At   3119 ms received msg 1: "#0 supposed to be 3118"
+.At   3620 ms received msg 2: "#1 supposed to be 3618"
+.At   6075 ms received msg 3: "#3 supposed to be 6073"
+.
+All tests successful
+

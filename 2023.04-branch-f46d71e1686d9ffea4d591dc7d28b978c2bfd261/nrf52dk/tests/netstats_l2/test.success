@@ -1,0 +1,22 @@
+
+
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:nrf52dk-10.saclay.iot-lab.info:20000' 
+NETOPT_TX_END_IRQ not implemented by driver
+main(): This is RIOT! (Version: buildtest)
+Welcome to RIOT!
+> NETOPT_TX_END_IRQ not implemented by driver
+main(): This is RIOT! (Version: buildtest)
+Welcome to RIOT!
+> ifconfig
+
+> 
+> ifconfig
+Iface  4  HWaddr: E1:B3:89:E5:5D:4F 
+          L2-PDU:1280  Source address length: 6
+          
+          Statistics for Layer 2
+            RX packets 0  bytes 0
+            TX packets 0 (Multicast: 0)  bytes 0
+            TX succeeded 0 errors 0
+
+> 

@@ -1,0 +1,23 @@
+r
+ssh -t rici@grenoble.iot-lab.info 'socat - tcp:nucleo-wl55jc-1.grenoble.iot-lab.info:20000' 
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+[START]
+now = 3539, t = 20
+now = 3582, t = 39
+now = 3675, t = 86
+now = 3768, t = 89
+now = 4144, t = 287
+[TRICKLE_RESET]
+now = 4160, t = 14
+now = 4181, t = 17
+now = 4231, t = 33
+now = 4343, t = 79
+now = 4579, t = 185
+now = 5111, t = 459
+now = 6067, t = 901
+[SUCCESS]
+

@@ -1,0 +1,32 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ./tests/ztimer_overhead test
+r
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:st-iotnode-10.saclay.iot-lab.info:20000' 
+Help: Press s to start test, r to print it is ready
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+ZTIMER_USEC auto_adjust params:
+    ZTIMER_USEC->adjust_set = 5
+    ZTIMER_USEC->adjust_sleep = 8
+ZTIMER_USEC auto_adjust params cleared
+zitmer_overhead_set...
+min=4 max=4 avg_diff=4
+zitmer_overhead_sleep...
+min=10 max=10 avg_diff=10
+ZTIMER_USEC adjust params for b-l475e-iot01a:
+    CONFIG_ZTIMER_USEC_ADJUST_SET    4
+    CONFIG_ZTIMER_USEC_ADJUST_SLEEP  10
+
+Traceback (most recent call last):
+  File "/home/runner/work/RIOT/RIOT/tests/ztimer_overhead/tests/01-run.py", line 33, in <module>
+    sys.exit(run(testfunc))
+  File "/home/runner/work/RIOT/RIOT/dist/pythonlibs/testrunner/__init__.py", line 30, in run
+    testfunc(child)
+  File "/home/runner/work/RIOT/RIOT/tests/ztimer_overhead/tests/01-run.py", line 29, in testfunc
+    assert auto_adjust_sleep >= adjust_sleep - ADJUST_SLEEP_MARGIN
+AssertionError
+make: *** [/home/runner/work/RIOT/RIOT/makefiles/tests/tests.inc.mk:26: test] Error 1
+
+Return value: 2

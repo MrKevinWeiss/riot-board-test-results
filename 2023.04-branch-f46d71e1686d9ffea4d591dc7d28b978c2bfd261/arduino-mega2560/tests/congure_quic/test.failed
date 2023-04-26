@@ -1,0 +1,35 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ./tests/congure_quic test
+.................F....................F.F.
+======================================================================
+FAIL: test_pacing (__main__.TestCongUREQUICDefault)
+See https://tools.ietf.org/html/rfc9002#section-7.7
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 841, in test_pacing
+    self.assertAlmostEqual(
+AssertionError: 16872 != 488 within 7 places (16384 difference)
+
+======================================================================
+FAIL: test_pacing (__main__.TestCongUREQUICEventCb)
+See https://tools.ietf.org/html/rfc9002#section-7.7
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 841, in test_pacing
+    self.assertAlmostEqual(
+AssertionError: 16872 != 488 within 7 places (16384 difference)
+
+======================================================================
+FAIL: test_setup_and_init (__main__.TestCongUREQUICEventCb)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/srv/jenkins-slave/workspace/RIOT/tests/congure_quic/tests/01-run.py", line 860, in test_setup_and_init
+    self.assertEqual(int(state['ctx'], base=16), 0xdead)
+AssertionError: 4294958765 != 57005
+
+----------------------------------------------------------------------
+Ran 42 tests in 161.973s
+
+FAILED (failures=3)
+make: *** [/srv/jenkins-slave/workspace/RIOT/makefiles/tests/tests.inc.mk:26: test] Error 1
+
+Return value: 2

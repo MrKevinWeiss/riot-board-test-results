@@ -1,0 +1,61 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ./tests/gnrc_lorawan_11 test
+r
+/srv/jenkins-slave/workspace/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM3" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM3
+Welcome to pyterm!
+Type '/exit' to exit.
+r
+r
+r
+r
+Traceback (most recent call last):
+  File "/srv/jenkins-slave/workspace/RIOT/tests/gnrc_lorawan_11/tests/01-run.py", line 14, in <module>
+    sys.exit(run_check_unittests())
+  File "/srv/jenkins-slave/workspace/RIOT/dist/pythonlibs/testrunner/__init__.py", line 69, in run_check_unittests
+    return run(_unittests_func, timeout, echo, traceback)
+  File "/srv/jenkins-slave/workspace/RIOT/dist/pythonlibs/testrunner/__init__.py", line 27, in run
+    child = setup_child(timeout, env=os.environ,
+  File "/srv/jenkins-slave/workspace/RIOT/dist/pythonlibs/testrunner/spawn.py", line 95, in setup_child
+    sync_child(child, env)
+  File "/srv/jenkins-slave/workspace/RIOT/dist/pythonlibs/testrunner/spawn.py", line 132, in sync_child
+    utils.test_utils_interactive_sync(child,
+  File "/srv/jenkins-slave/workspace/RIOT/dist/pythonlibs/testrunner/utils.py", line 30, in test_utils_interactive_sync
+    _test_utils_interactive_sync(child, retries, delay)
+  File "/srv/jenkins-slave/workspace/RIOT/dist/pythonlibs/testrunner/utils.py", line 22, in _test_utils_interactive_sync
+    child.expect_exact(ready_exp, timeout=0)
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/spawnbase.py", line 421, in expect_exact
+    return exp.expect_loop(timeout)
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/expect.py", line 181, in expect_loop
+    return self.timeout(e)
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/expect.py", line 144, in timeout
+    raise exc
+pexpect.exceptions.TIMEOUT: Timeout exceeded.
+<pexpect.pty_spawn.spawn object at 0x7f3b1a9c1250>
+command: /usr/bin/make
+args: [b'/usr/bin/make', b'cleanterm']
+buffer (last 100 chars): 'it.\r\n'
+before (last 100 chars): "and-on-empty-line \r\nConnect to serial port /dev/ttyACM3\r\nWelcome to pyterm!\r\nType '/exit' to exit.\r\n"
+after: <class 'pexpect.exceptions.TIMEOUT'>
+match: None
+match_index: None
+exitstatus: None
+flag_eof: False
+pid: 4129610
+child_fd: 5
+closed: False
+timeout: 10
+delimiter: <class 'pexpect.exceptions.EOF'>
+logfile: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='utf-8'>
+logfile_read: None
+logfile_send: None
+maxread: 2000
+ignorecase: False
+searchwindowsize: None
+delaybeforesend: 0.05
+delayafterclose: 0.1
+delayafterterminate: 0.1
+searcher: searcher_string:
+    0: 'READY'
+make: *** [/srv/jenkins-slave/workspace/RIOT/makefiles/tests/tests.inc.mk:26: test] Error 1
+
+Return value: 2

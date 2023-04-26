@@ -1,0 +1,58 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ./tests/shell_lock test
+shell_lock is an experimental feature and only shows as a proof of concept how the shell could be protected with a password. Do not expect relevant security from it for production, since Man-in-the-Middle attacks are possible depending on the used connection method!
+r
+shell_lock is an experimental feature and only shows as a proof of concept how the shell could be protected with a password. Do not expect relevant security from it for production, since Man-in-the-Middle attacks are possible depending on the used connection method!
+socat - open:/dev/ttyACM3,b115200,echo=0,raw,cs8,parenb=0,cstopb=0 
+r
+r
+r
+r
+Traceback (most recent call last):
+  File "/srv/jenkins-slave/workspace/RIOT/tests/shell_lock/tests/01-run.py", line 99, in <module>
+    sys.exit(run(testfunc))
+  File "/srv/jenkins-slave/workspace/RIOT/dist/pythonlibs/testrunner/__init__.py", line 27, in run
+    child = setup_child(timeout, env=os.environ,
+  File "/srv/jenkins-slave/workspace/RIOT/dist/pythonlibs/testrunner/spawn.py", line 95, in setup_child
+    sync_child(child, env)
+  File "/srv/jenkins-slave/workspace/RIOT/dist/pythonlibs/testrunner/spawn.py", line 132, in sync_child
+    utils.test_utils_interactive_sync(child,
+  File "/srv/jenkins-slave/workspace/RIOT/dist/pythonlibs/testrunner/utils.py", line 30, in test_utils_interactive_sync
+    _test_utils_interactive_sync(child, retries, delay)
+  File "/srv/jenkins-slave/workspace/RIOT/dist/pythonlibs/testrunner/utils.py", line 22, in _test_utils_interactive_sync
+    child.expect_exact(ready_exp, timeout=0)
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/spawnbase.py", line 421, in expect_exact
+    return exp.expect_loop(timeout)
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/expect.py", line 181, in expect_loop
+    return self.timeout(e)
+  File "/usr/local/lib/python3.8/dist-packages/pexpect/expect.py", line 144, in timeout
+    raise exc
+pexpect.exceptions.TIMEOUT: Timeout exceeded.
+<pexpect.pty_spawn.spawn object at 0x7f99f1982130>
+command: /usr/bin/make
+args: [b'/usr/bin/make', b'cleanterm']
+buffer (last 100 chars): '=0 \r\n'
+before (last 100 chars): 'n the used connection method!\r\nsocat - open:/dev/ttyACM3,b115200,echo=0,raw,cs8,parenb=0,cstopb=0 \r\n'
+after: <class 'pexpect.exceptions.TIMEOUT'>
+match: None
+match_index: None
+exitstatus: None
+flag_eof: False
+pid: 4151350
+child_fd: 5
+closed: False
+timeout: 10
+delimiter: <class 'pexpect.exceptions.EOF'>
+logfile: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='utf-8'>
+logfile_read: None
+logfile_send: None
+maxread: 2000
+ignorecase: False
+searchwindowsize: None
+delaybeforesend: 0.05
+delayafterclose: 0.1
+delayafterterminate: 0.1
+searcher: searcher_string:
+    0: 'READY'
+make: *** [/srv/jenkins-slave/workspace/RIOT/makefiles/tests/tests.inc.mk:26: test] Error 1
+
+Return value: 2

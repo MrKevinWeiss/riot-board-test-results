@@ -1,0 +1,12 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ./tests/stdin test
+O
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:m3-11.saclay.iot-lab.info:20000' 
+kex_exchange_identification: read: Connection reset by peer
+Connection reset by 193.55.250.145 port 22
+make[1]: *** [/home/runner/work/RIOT/RIOT/Makefile.include:880: cleanterm] Error 255
+Unexpected end of file in expect script at "ret = child.expect_exact([expected_output, pexpect.TIMEOUT]," (tests/stdin/tests/01-run.py:23)
+
+Process already stopped
+make: *** [/home/runner/work/RIOT/RIOT/makefiles/tests/tests.inc.mk:26: test] Error 1
+
+Return value: 2

@@ -1,0 +1,10 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ./tests/pthread_cooperation flash-only
+/srv/jenkins-slave/workspace/RIOT/dist/tools/cc2538-bsl/cc2538-bsl.py  -p "/dev/ttyUSB0"  --write-erase -v -b 460800 /srv/jenkins-slave/workspace/RIOT/tests/pthread_cooperation/bin/remote-revb/tests_pthread_cooperation.bin
+Opening port /dev/ttyUSB0, baud 460800
+Reading data from /srv/jenkins-slave/workspace/RIOT/tests/pthread_cooperation/bin/remote-revb/tests_pthread_cooperation.bin
+Cannot auto-detect firmware filetype: Assuming .bin
+Connecting to target...
+ERROR: Timeout waiting for ACK/NACK after 'Synch (0x55 0x55)'
+make: *** [/srv/jenkins-slave/workspace/RIOT/tests/pthread_cooperation/../../Makefile.include:852: flash-only] Error 1
+
+Return value: 2

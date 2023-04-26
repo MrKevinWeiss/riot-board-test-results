@@ -1,0 +1,33 @@
+r
+/srv/jenkins-slave/workspace/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyUSB1" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyUSB1
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+[START] event test application.
+
+initializing detached event queues 0x3ffb2c18
+posting 0x3ffb002c to delayed queue at index 1
+posting 0x3ffb0024 to delayed queue at index 1
+posting 0x3ffb001c to delayed queue at index 0
+running thread that will claim event queues 0x3ffb2c18
+claiming event queues 0x3ffb2c18
+launching event queue for queues 0x3ffb2c18
+triggered delayed event 0x3ffb001c
+triggered delayed event 0x3ffb002c
+triggered delayed event 0x3ffb0024
+posting 0x3ffb003c
+posting 0x3ffb0034
+canceling 0x3ffb0034
+posting custom event
+posting timed callback with timeout 1sec
+posting timed callback with timeout 0.5sec and canceling it again
+launching event queue
+triggered 0x3ffb003c
+triggered custom event with text: "CUSTOM CALLBACK"
+triggered timed callback with arg 0x12345678 after 1000056us
+[SUCCESS]
+

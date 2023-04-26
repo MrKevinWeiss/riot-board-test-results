@@ -1,0 +1,21 @@
+r
+ssh -t rici@grenoble.iot-lab.info 'socat - tcp:nucleo-wl55jc-1.grenoble.iot-lab.info:20000' 
+Help: Press s to start test, r to print it is ready
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+Testing clock: ZTIMER_MSEC
+i: 0 time: 3627 offset: 0
+i: 1 time: 3727 offset: 0
+i: 2 time: 3827 offset: 0
+i: 3 time: 3927 offset: 0
+i: 4 time: 4027 offset: 0
+Testing clock: ZTIMER_USEC
+i: 0 time: 4051956 offset: 9
+i: 1 time: 4061957 offset: 1
+i: 2 time: 4071955 offset: 2
+i: 3 time: 4081954 offset: 1
+i: 4 time: 4091955 offset: 1
+Test successful.
+

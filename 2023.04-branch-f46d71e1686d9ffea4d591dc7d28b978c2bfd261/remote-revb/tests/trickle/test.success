@@ -1,0 +1,25 @@
+r
+/srv/jenkins-slave/workspace/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyUSB0" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyUSB0
+Welcome to pyterm!
+Type '/exit' to exit.
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+[START]
+now = 3148, t = 21
+now = 3203, t = 46
+now = 3316, t = 101
+now = 3515, t = 186
+now = 3911, t = 356
+[TRICKLE_RESET]
+now = 3924, t = 11
+now = 3960, t = 29
+now = 4009, t = 45
+now = 4108, t = 78
+now = 4356, t = 196
+now = 4920, t = 502
+now = 5607, t = 675
+[SUCCESS]
+

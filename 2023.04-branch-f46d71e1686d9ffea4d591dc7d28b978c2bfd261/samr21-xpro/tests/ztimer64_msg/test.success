@@ -1,0 +1,70 @@
+r
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:samr21-10.saclay.iot-lab.info:20000' 
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+This is thread 2
+sending 1st msg
+now=3:441407 -> every 2.0s: Hello World
+sending 2nd msg
+now=3:446558 -> every 5.0s: This is a Test
+This is thread 3
+sec=4 min=0 hour=0
+now=5:445219 -> every 2.0s: Hello World
+sec=5 min=0 hour=0
+sec=6 min=0 hour=0
+now=7:449032 -> every 2.0s: Hello World
+sec=7 min=0 hour=0
+now=8:450635 -> every 5.0s: This is a Test
+sec=8 min=0 hour=0
+now=9:452845 -> every 2.0s: Hello World
+sec=9 min=0 hour=0
+sec=10 min=0 hour=0
+now=11:456659 -> every 2.0s: Hello World
+sec=11 min=0 hour=0
+sec=12 min=0 hour=0
+now=13:454713 -> every 5.0s: This is a Test
+now=13:460562 -> every 2.0s: Hello World
+sec=13 min=0 hour=0
+sec=14 min=0 hour=0
+now=15:464465 -> every 2.0s: Hello World
+sec=15 min=0 hour=0
+sec=16 min=0 hour=0
+now=17:468368 -> every 2.0s: Hello World
+sec=17 min=0 hour=0
+now=18:458879 -> every 5.0s: This is a Test
+sec=18 min=0 hour=0
+now=19:472271 -> every 2.0s: Hello World
+sec=19 min=0 hour=0
+sec=20 min=0 hour=0
+now=21:476174 -> every 2.0s: Hello World
+sec=21 min=0 hour=0
+sec=22 min=0 hour=0
+now=23:463046 -> every 5.0s: This is a Test
+now=23:480078 -> every 2.0s: Hello World
+sec=23 min=0 hour=0
+sec=24 min=0 hour=0
+now=25:483982 -> every 2.0s: Hello World
+sec=25 min=0 hour=0
+sec=26 min=0 hour=0
+now=27:487886 -> every 2.0s: Hello World
+sec=27 min=0 hour=0
+now=28:467214 -> every 5.0s: This is a Test
+sec=28 min=0 hour=0
+now=29:491790 -> every 2.0s: Hello World
+sec=29 min=0 hour=0
+sec=30 min=0 hour=0
+now=31:495694 -> every 2.0s: Hello World
+sec=31 min=0 hour=0
+sec=32 min=0 hour=0
+now=33:471381 -> every 5.0s: This is a Test
+now=33:499598 -> every 2.0s: Hello World
+sec=33 min=0 hour=0
+sec=34 min=0 hour=0
+now=35:503503 -> every 2.0s: Hello World
+sec=35 min=0 hour=0
+sec=36 min=0 hour=0
+now=37:507407 -> every 2.0s: Hello World
+sec=37 min=0 hour=0
+now=38:475549 -> every 5.0s: This is a Test

@@ -1,0 +1,33 @@
+r
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:m3-11.saclay.iot-lab.info:20000' 
+READY
+s
+START
+Creating thread #0, next=1
+Creating thread #1, next=2
+Creating thread #2, next=3
+Creating thread #3, next=4
+Creating thread #4, next=0
+
+> 
+> 
+> help
+help
+Command              Description
+---------------------------------------
+pm                   interact with layered PM subsystem
+ps                   Prints information about running threads.
+reboot               Reboot the node
+version              Prints current RIOT_VERSION
+> ps
+ps
+	pid | name                 | state    Q | pri | stack  ( used) ( free) | base addr  | current     | runtime  | switches  | runtime_usec 
+	  - | isr_stack            | -        - |   - |    512 (  200) (  312) | 0x20000000 | 0x200001c8
+	  1 | main                 | running  Q |   7 |   1536 (  796) (  740) | 0x20001908 | 0x20001bec  |  0.277% |        23  |      14160 
+	  2 | thread               | bl rx    _ |   6 |   1024 (  412) (  612) | 0x2000042c | 0x2000075c  |  0.388% |       125  |      19830 
+	  3 | thread               | bl rx    _ |   6 |   1024 (  412) (  612) | 0x2000082c | 0x20000b5c  |  0.561% |       125  |      28696 
+	  4 | thread               | bl mutex _ |   6 |   1024 (  412) (  612) | 0x20000c2c | 0x20000f3c  |  0.746% |       126  |      38145 
+	  5 | thread               | bl rx    _ |   6 |   1024 (  412) (  612) | 0x2000102c | 0x2000135c  |  0.923% |       127  |      47176 
+	  6 | thread               | bl rx    _ |   6 |   1024 (  412) (  612) | 0x2000142c | 0x2000175c  |  0.217% |       127  |      11130 
+	    | SUM                  |            |     |   7168 ( 3056) ( 4112)
+> 

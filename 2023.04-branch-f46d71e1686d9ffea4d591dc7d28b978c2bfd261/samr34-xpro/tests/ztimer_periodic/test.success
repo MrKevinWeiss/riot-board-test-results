@@ -1,0 +1,20 @@
+r
+ssh -t rici@grenoble.iot-lab.info 'socat - tcp:samr34-1.grenoble.iot-lab.info:20000' 
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+Testing clock: ZTIMER_MSEC
+i: 0 time: 3577 offset: 0
+i: 1 time: 3677 offset: 0
+i: 2 time: 3777 offset: 0
+i: 3 time: 3877 offset: 0
+i: 4 time: 3977 offset: 0
+Testing clock: ZTIMER_USEC
+i: 0 time: 4000375 offset: 23
+i: 1 time: 4010373 offset: 2
+i: 2 time: 4020374 offset: 1
+i: 3 time: 4030374 offset: 0
+i: 4 time: 4040374 offset: 0
+Test successful.
+

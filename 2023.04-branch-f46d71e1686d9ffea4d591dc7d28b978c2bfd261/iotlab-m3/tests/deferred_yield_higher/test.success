@@ -1,0 +1,11 @@
+r
+ssh -t rici@saclay.iot-lab.info 'socat - tcp:m3-11.saclay.iot-lab.info:20000' 
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+1. post yield
+2. second thread scheduled
+{ "threads": [{ "name": "nr2", "stack_size": 1024, "stack_used": 164 }]}
+3. post irq enable
+if above messages are i

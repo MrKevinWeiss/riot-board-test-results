@@ -1,0 +1,5 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ./tests/pkg_yxml flash-only
+iotlab-node --jmespath='keys(@)[0]' --format='lambda ret: exit(int(ret))' --id 367115 --list saclay,nrf52dk,10 --flash /home/runner/work/RIOT/RIOT/tests/pkg_yxml/bin/nrf52dk/tests_pkg_yxml.bin
+make: *** [/home/runner/work/RIOT/RIOT/tests/pkg_yxml/../../Makefile.include:852: flash-only] Error 1
+
+Return value: 2

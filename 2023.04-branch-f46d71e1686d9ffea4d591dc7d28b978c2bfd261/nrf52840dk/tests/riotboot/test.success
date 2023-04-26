@@ -1,0 +1,155 @@
+make: command: Command not found
+
+
+make[1]: command: Command not found
+/srv/jenkins-slave/workspace/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM5" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM5
+Welcome to pyterm!
+Type '/exit' to exit.
+
+> 
+> curslotnr
+curslotnr
+Current slot=0
+> curslothdr
+curslothdr
+Image magic_number: 0x544f4952
+Image Version: 0x6447963f
+make[1]: command: Command not found
+compiling /srv/jenkins-slave/workspace/RIOT/dist/tools/riotboot_gen_hdr/bin/genhdr...
+make: Nothing to be done for 'all'.
+creating /srv/jenkins-slave/workspace/RIOT/tests/riotboot/bin/nrf52840dk/riotboot_files/slot1.1682413120.bin...
+/srv/jenkins-slave/workspace/RIOT/dist/tools/openocd/openocd.sh flash /srv/jenkins-slave/workspace/RIOT/tests/riotboot/bin/nrf52840dk/riotboot_files/slot1.1682413120.bin
+### Flashing Target ###
+Binfile detected, adding ROM base address: 0x00000000
+Flashing with IMAGE_OFFSET: 0x00081000
+xPack OpenOCD x86_64 Open On-Chip Debugger 0.11.0+dev (2022-03-25-17:31)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+DEPRECATED! use 'adapter serial' not 'jlink serial'
+swd
+DEPRECATED! use 'adapter serial' not 'jlink serial'
+Warn : Transport "swd" was already selected
+swd
+Info : J-Link OB-SAM3U128-V2-NordicSemi compiled Feb  2 2021 16:47:20
+Info : Hardware version: 1.00
+Info : VTarget = 3.300 V
+Info : clock speed 1000 kHz
+Info : SWD DPIDR 0x2ba01477
+Info : [nrf52.cpu] Cortex-M4 r0p1 processor detected
+Info : [nrf52.cpu] target has 6 breakpoints, 4 watchpoints
+Info : starting gdb server for nrf52.cpu on 0
+Info : Listening on port 39511 for gdb connections
+    TargetName         Type       Endian TapName            State       
+--  ------------------ ---------- ------ ------------------ ------------
+ 0* nrf52.cpu          cortex_m   little nrf52.cpu          halted
+
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x0000033c msp: 0x20000200
+Info : nRF52840-xxAA(build code: D0) 1024kB Flash, 256kB RAM
+Warn : Adding extra erase range, 0x000847e0 .. 0x00084fff
+auto erase enabled
+wrote 14304 bytes from file /srv/jenkins-slave/workspace/RIOT/tests/riotboot/bin/nrf52840dk/riotboot_files/slot1.1682413120.bin in 0.616327s (22.665 KiB/s)
+
+verified 14304 bytes in 0.053917s (259.079 KiB/s)
+
+shutdown command invoked
+Done flashing
+
+
+
+make[1]: command: Command not found
+/srv/jenkins-slave/workspace/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM5" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM5
+Welcome to pyterm!
+Type '/exit' to exit.
+
+> 
+> curslotnr
+curslotnr
+Current slot=1
+> curslothdr
+curslothdr
+Image magic_number: 0x544f4952
+Image Version: 0x64479640
+Image start address: 0x00081400
+Header chksum: 0x0b5bac31
+
+> getslotaddr 0
+getslotaddr 0
+Slot 0 address=0x00002400
+> dumpaddrs
+dumpaddrs
+slot 0: metadata: 0x2000 image: 0x00002400
+slot 1: metadata: 0x81000 image: 0x00081400
+> make[1]: command: Command not found
+compiling /srv/jenkins-slave/workspace/RIOT/dist/tools/riotboot_gen_hdr/bin/genhdr...
+make: Nothing to be done for 'all'.
+creating /srv/jenkins-slave/workspace/RIOT/tests/riotboot/bin/nrf52840dk/riotboot_files/slot0.1682413121.bin...
+/srv/jenkins-slave/workspace/RIOT/dist/tools/openocd/openocd.sh flash /srv/jenkins-slave/workspace/RIOT/tests/riotboot/bin/nrf52840dk/riotboot_files/slot0.1682413121.bin
+### Flashing Target ###
+Binfile detected, adding ROM base address: 0x00000000
+Flashing with IMAGE_OFFSET: 0x00002000
+xPack OpenOCD x86_64 Open On-Chip Debugger 0.11.0+dev (2022-03-25-17:31)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+DEPRECATED! use 'adapter serial' not 'jlink serial'
+swd
+DEPRECATED! use 'adapter serial' not 'jlink serial'
+Warn : Transport "swd" was already selected
+swd
+Info : J-Link OB-SAM3U128-V2-NordicSemi compiled Feb  2 2021 16:47:20
+Info : Hardware version: 1.00
+Info : VTarget = 3.300 V
+Info : clock speed 1000 kHz
+Info : SWD DPIDR 0x2ba01477
+Info : [nrf52.cpu] Cortex-M4 r0p1 processor detected
+Info : [nrf52.cpu] target has 6 breakpoints, 4 watchpoints
+Info : starting gdb server for nrf52.cpu on 0
+Info : Listening on port 33743 for gdb connections
+    TargetName         Type       Endian TapName            State       
+--  ------------------ ---------- ------ ------------------ ------------
+ 0* nrf52.cpu          cortex_m   little nrf52.cpu          halted
+
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x0000033c msp: 0x20000200
+Info : nRF52840-xxAA(build code: D0) 1024kB Flash, 256kB RAM
+Warn : Adding extra erase range, 0x000057e0 .. 0x00005fff
+auto erase enabled
+wrote 14304 bytes from file /srv/jenkins-slave/workspace/RIOT/tests/riotboot/bin/nrf52840dk/riotboot_files/slot0.1682413121.bin in 0.612625s (22.801 KiB/s)
+
+verified 14304 bytes in 0.052496s (266.092 KiB/s)
+
+shutdown command invoked
+Done flashing
+
+
+
+make[1]: command: Command not found
+/srv/jenkins-slave/workspace/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM5" -b "115200" --no-reconnect --noprefix --no-repeat-command-on-empty-line 
+Connect to serial port /dev/ttyACM5
+Welcome to pyterm!
+Type '/exit' to exit.
+
+> 
+> curslotnr
+curslotnr
+Current slot=0
+> curslothdr
+curslothdr
+Image magic_number: 0x544f4952
+Image Version: 0x64479641
+Image start address: 0x00002400
+Header chksum: 0x2b57bc2a
+
+> getslotaddr 0
+getslotaddr 0
+Slot 0 address=0x00002400
+> dumpaddrs
+dumpaddrs
+slot 0: metadata: 0x2000 image: 0x00002400
+slot 1: metadata: 0x81000 image: 0x00081400
+> 
+TEST PASSED

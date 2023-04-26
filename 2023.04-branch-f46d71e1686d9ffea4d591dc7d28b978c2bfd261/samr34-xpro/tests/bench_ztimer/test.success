@@ -1,0 +1,23 @@
+r
+ssh -t rici@grenoble.iot-lab.info 'socat - tcp:samr34-1.grenoble.iot-lab.info:20000' 
+READY
+s
+START
+main(): This is RIOT! (Version: buildtest)
+ztimer benchmark application.
+
+                     set() one    91459 / 1000 = 91
+                  remove() one     1704 / 1000 = 1
+          set() + remove() one   182940 / 1000 = 182
+  set() many increasing target   138172 / 1000 = 138
+               re-set()  first    91454 / 1000 = 91
+               re-set() middle    91563 / 1000 = 91
+               re-set()   last    91653 / 1000 = 91
+       remove() + set()  first   182938 / 1000 = 182
+       remove() + set() middle   182950 / 1000 = 182
+       remove() + set()   last   182948 / 1000 = 182
+      remove() many decreasing   196186 / 1000 = 196
+                  ztimer_now()     7173 / 1000 = 7
+              sizeof(ztimer_t)    16000 / 1000 = 16
+done.
+
